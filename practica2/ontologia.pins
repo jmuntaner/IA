@@ -1,0 +1,3470 @@
+; Tue May 21 01:10:55 CEST 2019
+; 
+;+ (version "3.5")
+;+ (build "Build 663")
+
+([ontologia_Class0] of  Plato
+
+	(coccion Otros)
+	(estacion Invierno Otono Primavera Verano)
+	(ingrediente_principal [ontologia_Class4])
+	(ingredientes_secundarios [ontologia_Class5])
+	(nombre "Leche con cacao")
+	(tipo_plato Desayuno))
+
+([ontologia_Class10000] of  Plato
+
+	(coccion Hervido)
+	(estacion Invierno Otono)
+	(ingrediente_principal [ontologia_Class10001])
+	(ingredientes_secundarios
+		[ontologia_Class10004]
+		[ontologia_Class20009]
+		[ontologia_Class20010]
+		[ontologia_Class20012]
+		[ontologia_Class20014])
+	(nombre "Estofado de ternera")
+	(tipo_plato Principal))
+
+([ontologia_Class10001] of  IngredientePlato
+
+	(cantidad 6.0)
+	(ingrediente [ontologia_Class10002]))
+
+([ontologia_Class10002] of  Ingrediente
+
+	(nombre "Carne de ternera")
+	(nombre_racion "trozo")
+	(nutrientes [ontologia_Class1000200])
+	(tamano_racion 28.3)
+	(tipo_ingrediente Carne))
+
+([ontologia_Class1000200] of  Nutrientes
+
+	(azucar 0.0)
+	(calcio 0.3)
+	(colesterol 28.0)
+	(energia 54.0)
+	(grasas 1.9)
+	(grasas_saturadas 0.8)
+	(hidratos_de_carbono 0.0)
+	(hierro 4.7)
+	(potasio 90.3)
+	(proteinas 9.3)
+	(sodio 19.0)
+	(vitamina_a 0.0)
+	(vitamina_c 0.0))
+
+([ontologia_Class10003] of  IngredientePlato
+
+	(cantidad 0.4)
+	(ingrediente [ontologia_Class10036]))
+
+([ontologia_Class10004] of  IngredientePlato
+
+	(cantidad 0.5)
+	(ingrediente [ontologia_Class10041]))
+
+([ontologia_Class1000500] of  Nutrientes
+
+	(azucar 0.0)
+	(calcio 0.4)
+	(colesterol 0.0)
+	(energia 4.5)
+	(grasas 0.0)
+	(grasas_saturadas 0.0)
+	(hidratos_de_carbono 1.0)
+	(hierro 0.3)
+	(potasio 12.0)
+	(proteinas 0.2)
+	(sodio 0.5)
+	(vitamina_a 0.0)
+	(vitamina_c 1.6))
+
+([ontologia_Class10006] of  Ingrediente
+
+	(nombre "Tomate triturado")
+	(nombre_racion "cucharada")
+	(nutrientes [ontologia_Class1000600])
+	(tamano_racion 16.0)
+	(tipo_ingrediente Otro))
+
+([ontologia_Class1000600] of  Nutrientes
+
+	(azucar 1.9)
+	(calcio 0.4)
+	(colesterol 0.0)
+	(energia 13.0)
+	(grasas 0.1)
+	(grasas_saturadas 0.0)
+	(hidratos_de_carbono 3.0)
+	(hierro 2.6)
+	(potasio 162.0)
+	(proteinas 0.7)
+	(sodio 9.4)
+	(vitamina_a 4.9)
+	(vitamina_c 5.8))
+
+([ontologia_Class10007] of  Plato
+
+	(coccion Horneado)
+	(estacion Invierno Otono Primavera Verano)
+	(ingrediente_principal [ontologia_Class10008])
+	(ingredientes_secundarios
+		[ontologia_Class10009]
+		[ontologia_Class10037])
+	(nombre "Tostadas con mantequilla y mermelada")
+	(tipo_plato Desayuno))
+
+([ontologia_Class10008] of  IngredientePlato
+
+	(cantidad 2.0)
+	(ingrediente [ontologia_Class21]))
+
+([ontologia_Class10009] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class22]))
+
+([ontologia_Class10010] of  Plato
+
+	(coccion Crudo)
+	(estacion Primavera Invierno)
+	(ingrediente_principal [ontologia_Class10011])
+	(nombre "Zumo de naranja")
+	(tipo_plato Desayuno))
+
+([ontologia_Class10011] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class23]))
+
+([ontologia_Class10013] of  Plato
+
+	(coccion Hervido)
+	(estacion Invierno Otono Primavera Verano)
+	(ingrediente_principal [ontologia_Class10017])
+	(ingredientes_secundarios
+		[ontologia_Class10018]
+		[ontologia_Class10019]
+		[ontologia_Class10021])
+	(nombre "Ensalada de patatas, huevo y atun")
+	(tipo_plato Principal))
+
+([ontologia_Class10016] of  Ingrediente
+
+	(nombre "Sal")
+	(nombre_racion "cucharadita")
+	(nutrientes [ontologia_Class1001600])
+	(tamano_racion 6.0)
+	(tipo_ingrediente Otro))
+
+([ontologia_Class1001600] of  Nutrientes
+
+	(azucar 0.0)
+	(calcio 0.1)
+	(colesterol 0.0)
+	(energia 0.0)
+	(grasas 0.0)
+	(grasas_saturadas 0.0)
+	(hidratos_de_carbono 0.0)
+	(hierro 0.1)
+	(potasio 0.5)
+	(proteinas 0.0)
+	(sodio 2324.0)
+	(vitamina_a 0.0)
+	(vitamina_c 0.0))
+
+([ontologia_Class10017] of  IngredientePlato
+
+	(cantidad 2.0)
+	(ingrediente [ontologia_Class24]))
+
+([ontologia_Class10018] of  IngredientePlato
+
+	(cantidad 0.5)
+	(ingrediente [ontologia_Class25]))
+
+([ontologia_Class10019] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class27]))
+
+([ontologia_Class10020] of  Ingrediente
+
+	(nombre "Aceite de oliva")
+	(nombre_racion "cucharada")
+	(nutrientes [ontologia_Class1002000])
+	(tamano_racion 14.0)
+	(tipo_ingrediente Otro))
+
+([ontologia_Class1002000] of  Nutrientes
+
+	(azucar 0.0)
+	(calcio 0.0)
+	(colesterol 0.0)
+	(energia 119.0)
+	(grasas 14.0)
+	(grasas_saturadas 1.9)
+	(hidratos_de_carbono 0.0)
+	(hierro 0.4)
+	(potasio 0.1)
+	(proteinas 0.0)
+	(sodio 0.3)
+	(vitamina_a 0.0)
+	(vitamina_c 0.0))
+
+([ontologia_Class10021] of  IngredientePlato
+
+	(cantidad 0.5)
+	(ingrediente [ontologia_Class10020]))
+
+([ontologia_Class10022] of  Ingrediente
+
+	(nombre "Carne de cordero")
+	(nombre_racion "chuleta")
+	(nutrientes [ontologia_Class1002200])
+	(tamano_racion 85.0)
+	(tipo_ingrediente Carne))
+
+([ontologia_Class1002200] of  Nutrientes
+
+	(azucar 0.0)
+	(calcio 0.7)
+	(colesterol 79.0)
+	(energia 219.0)
+	(grasas 14.0)
+	(grasas_saturadas 5.9)
+	(hidratos_de_carbono 0.0)
+	(hierro 9.4)
+	(potasio 266.0)
+	(proteinas 22.0)
+	(sodio 56.0)
+	(vitamina_a 0.0)
+	(vitamina_c 0.0))
+
+([ontologia_Class10023] of  Ingrediente
+
+	(nombre "Tomate")
+	(nutrientes [ontologia_Class1002300])
+	(tamano_racion 123.0)
+	(tipo_ingrediente Verdura))
+
+([ontologia_Class1002300] of  Nutrientes
+
+	(azucar 3.2)
+	(calcio 0.9)
+	(colesterol 0.0)
+	(energia 22.0)
+	(grasas 0.3)
+	(grasas_saturadas 0.0)
+	(hidratos_de_carbono 4.8)
+	(hierro 1.8)
+	(potasio 292.0)
+	(proteinas 1.1)
+	(sodio 6.2)
+	(vitamina_a 20.0)
+	(vitamina_c 28.0))
+
+([ontologia_Class10024] of  Plato
+
+	(coccion Plancha)
+	(estacion Invierno Otono Primavera Verano)
+	(ingrediente_principal [ontologia_Class10027])
+	(nombre "Cordero a la plancha")
+	(tipo_plato Principal))
+
+([ontologia_Class10027] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class10022]))
+
+([ontologia_Class10029] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class10023]))
+
+([ontologia_Class10032] of  Ingrediente
+
+	(nombre "Melocoton")
+	(nutrientes [ontologia_Class1003200])
+	(tamano_racion 175.0)
+	(tipo_ingrediente Fruta))
+
+([ontologia_Class1003200] of  Nutrientes
+
+	(azucar 15.0)
+	(calcio 0.8)
+	(colesterol 0.0)
+	(energia 68.0)
+	(grasas 0.4)
+	(grasas_saturadas 0.0)
+	(hidratos_de_carbono 17.0)
+	(hierro 2.4)
+	(potasio 333.0)
+	(proteinas 1.6)
+	(sodio 0.0)
+	(vitamina_a 11.0)
+	(vitamina_c 19.0))
+
+([ontologia_Class10033] of  Plato
+
+	(coccion Crudo)
+	(estacion Primavera)
+	(ingrediente_principal [ontologia_Class10034])
+	(nombre "Melocoton")
+	(tipo_plato Postre))
+
+([ontologia_Class10034] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class10032]))
+
+([ontologia_Class10035] of  Ingrediente
+
+	(nombre "Yogur azucarado")
+	(nutrientes [ontologia_Class1003500])
+	(tamano_racion 120.0)
+	(tipo_ingrediente Lacteo))
+
+([ontologia_Class1003500] of  Nutrientes
+
+	(azucar 8.5)
+	(calcio 16.9)
+	(colesterol 7.1)
+	(energia 75.5)
+	(grasas 1.8)
+	(grasas_saturadas 1.2)
+	(hidratos_de_carbono 8.5)
+	(hierro 0.5)
+	(potasio 281.0)
+	(proteinas 6.3)
+	(sodio 84.0)
+	(vitamina_a 1.2)
+	(vitamina_c 1.6))
+
+([ontologia_Class10036] of  Ingrediente
+
+	(nombre "Mantequilla")
+	(nombre_racion "cucharada")
+	(nutrientes [ontologia_Class1003600])
+	(tamano_racion 14.0)
+	(tipo_ingrediente Lacteo))
+
+([ontologia_Class1003600] of  Nutrientes
+
+	(azucar 0.0)
+	(calcio 0.3)
+	(colesterol 31.0)
+	(energia 102.0)
+	(grasas 12.0)
+	(grasas_saturadas 7.3)
+	(hidratos_de_carbono 0.0)
+	(hierro 0.0)
+	(potasio 3.4)
+	(proteinas 0.1)
+	(sodio 91.0)
+	(vitamina_a 7.1)
+	(vitamina_c 0.0))
+
+([ontologia_Class10037] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class10036]))
+
+([ontologia_Class10038] of  Plato
+
+	(coccion Crudo)
+	(estacion Invierno Otono Primavera Verano)
+	(ingrediente_principal [ontologia_Class10039])
+	(nombre "Yogur azucarado")
+	(tipo_plato Desayuno Postre))
+
+([ontologia_Class10039] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class10035]))
+
+([ontologia_Class10040] of  Ingrediente
+
+	(nombre "Calabacin")
+	(nutrientes [ontologia_Class1004000])
+	(tamano_racion 217.0)
+	(tipo_ingrediente Verdura))
+
+([ontologia_Class1004000] of  Nutrientes
+
+	(azucar 3.7)
+	(calcio 3.0)
+	(colesterol 0.0)
+	(energia 33.0)
+	(grasas 0.8)
+	(grasas_saturadas 0.2)
+	(hidratos_de_carbono 5.8)
+	(hierro 4.5)
+	(potasio 573.0)
+	(proteinas 2.5)
+	(sodio 6.5)
+	(vitamina_a 48.0)
+	(vitamina_c 47.0))
+
+([ontologia_Class10041] of  Ingrediente
+
+	(nombre "Cebolla")
+	(nutrientes [ontologia_Class1004100])
+	(tamano_racion 94.0)
+	(tipo_ingrediente Verdura))
+
+([ontologia_Class1004100] of  Nutrientes
+
+	(azucar 4.4)
+	(calcio 1.6)
+	(colesterol 0.0)
+	(energia 41.0)
+	(grasas 0.2)
+	(grasas_saturadas 0.0)
+	(hidratos_de_carbono 9.5)
+	(hierro 1.3)
+	(potasio 156.0)
+	(proteinas 1.3)
+	(sodio 2.8)
+	(vitamina_a 0.0)
+	(vitamina_c 8.1))
+
+([ontologia_Class10042] of  Plato
+
+	(coccion Hervido)
+	(estacion Primavera Verano)
+	(ingrediente_principal [ontologia_Class10043])
+	(ingredientes_secundarios
+		[ontologia_Class10044]
+		[ontologia_Class10045]
+		[ontologia_Class10047]
+		[ontologia_Class10048])
+	(nombre "Crema de calabacin")
+	(tipo_plato Principal))
+
+([ontologia_Class10043] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class10040]))
+
+([ontologia_Class10044] of  IngredientePlato
+
+	(cantidad 0.5)
+	(ingrediente [ontologia_Class24]))
+
+([ontologia_Class10045] of  IngredientePlato
+
+	(cantidad 0.5)
+	(ingrediente [ontologia_Class10041]))
+
+([ontologia_Class10047] of  IngredientePlato
+
+	(cantidad 0.25)
+	(ingrediente [ontologia_Class18]))
+
+([ontologia_Class10048] of  IngredientePlato
+
+	(cantidad 0.5)
+	(ingrediente [ontologia_Class10020]))
+
+([ontologia_Class10049] of  Ingrediente
+
+	(nombre "Merluza")
+	(nombre_racion "filete")
+	(nutrientes [ontologia_Class1004900])
+	(tamano_racion 150.0)
+	(tipo_ingrediente Pescado))
+
+([ontologia_Class1004900] of  Nutrientes
+
+	(azucar 0.0)
+	(calcio 1.6)
+	(colesterol 99.0)
+	(energia 135.0)
+	(grasas 0.8)
+	(grasas_saturadas 0.2)
+	(hidratos_de_carbono 0.0)
+	(hierro 1.8)
+	(potasio 527.0)
+	(proteinas 30.0)
+	(sodio 392.0)
+	(vitamina_a 1.9)
+	(vitamina_c 0.0))
+
+([ontologia_Class10050] of  Plato
+
+	(coccion Plancha)
+	(estacion Invierno Otono Primavera Verano)
+	(ingrediente_principal [ontologia_Class10051])
+	(nombre "Merluza a la plancha")
+	(tipo_plato Principal))
+
+([ontologia_Class10051] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class10049]))
+
+([ontologia_Class10052] of  Plato
+
+	(coccion Crudo)
+	(estacion Invierno Otono Primavera Verano)
+	(ingrediente_principal [ontologia_Class10053])
+	(nombre "Tomate")
+	(tipo_plato Acompanamiento))
+
+([ontologia_Class10053] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class10023]))
+
+([ontologia_Class10054] of  Plato
+
+	(coccion Crudo)
+	(estacion Otono Primavera)
+	(ingrediente_principal [ontologia_Class10058])
+	(ingredientes_secundarios [ontologia_Class10059])
+	(nombre "Ensalada de lechuga con maiz")
+	(tipo_plato Acompanamiento))
+
+([ontologia_Class10056] of  Ingrediente
+
+	(nombre "Lechuga")
+	(nombre_racion "bol")
+	(nutrientes [ontologia_Class1005600])
+	(tamano_racion 94.0)
+	(tipo_ingrediente Verdura))
+
+([ontologia_Class1005600] of  Nutrientes
+
+	(azucar 1.1)
+	(calcio 2.4)
+	(colesterol 0.0)
+	(energia 16.0)
+	(grasas 0.3)
+	(grasas_saturadas 0.0)
+	(hidratos_de_carbono 3.1)
+	(hierro 5.1)
+	(potasio 232.0)
+	(proteinas 1.2)
+	(sodio 7.5)
+	(vitamina_a 164.0)
+	(vitamina_c 6.3))
+
+([ontologia_Class10057] of  Ingrediente
+
+	(nombre "Maiz dulce")
+	(nombre_racion "lata")
+	(nutrientes [ontologia_Class1005700])
+	(tamano_racion 150.0)
+	(tipo_ingrediente Cereal))
+
+([ontologia_Class1005700] of  Nutrientes
+
+	(azucar 8.4)
+	(calcio 0.4)
+	(colesterol 0.0)
+	(energia 124.0)
+	(grasas 2.2)
+	(grasas_saturadas 0.5)
+	(hidratos_de_carbono 26.6)
+	(hierro 2.8)
+	(potasio 244.0)
+	(proteinas 4.2)
+	(sodio 378.0)
+	(vitamina_a 1.7)
+	(vitamina_c 5.5))
+
+([ontologia_Class10058] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class10056]))
+
+([ontologia_Class10059] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class10057]))
+
+([ontologia_Class16] of  Ingrediente
+
+	(nombre "Arroz blanco")
+	(nombre_racion "vaso")
+	(nutrientes [ontologia_Class1600])
+	(tamano_racion 158.0)
+	(tipo_ingrediente Cereal))
+
+([ontologia_Class1600] of  Nutrientes
+
+	(azucar 0.1)
+	(calcio 1.2)
+	(colesterol 0.0)
+	(energia 205.0)
+	(grasas 0.4)
+	(grasas_saturadas 0.1)
+	(hidratos_de_carbono 45.0)
+	(hierro 1.8)
+	(potasio 55.0)
+	(proteinas 4.3)
+	(sodio 1.6)
+	(vitamina_a 0.0)
+	(vitamina_c 0.0))
+
+([ontologia_Class18] of  Ingrediente
+
+	(nombre "Leche semidesnatada")
+	(nombre_racion "vaso")
+	(nutrientes [ontologia_Class1800])
+	(tamano_racion 244.0)
+	(tipo_ingrediente Lacteo))
+
+([ontologia_Class1800] of  Nutrientes
+
+	(azucar 12.0)
+	(calcio 23.0)
+	(colesterol 20.0)
+	(energia 122.0)
+	(grasas 4.8)
+	(grasas_saturadas 3.1)
+	(hidratos_de_carbono 12.0)
+	(hierro 0.3)
+	(potasio 342.0)
+	(proteinas 8.1)
+	(sodio 115.0)
+	(vitamina_a 9.3)
+	(vitamina_c 0.8))
+
+([ontologia_Class20] of  Ingrediente
+
+	(nombre "Cacao en polvo")
+	(nombre_racion "cucharada")
+	(nutrientes [ontologia_Class2000])
+	(tamano_racion 7.0)
+	(tipo_ingrediente Otro))
+
+([ontologia_Class2000] of  Nutrientes
+
+	(azucar 5.3)
+	(calcio 2.5)
+	(colesterol 0.0)
+	(energia 28.0)
+	(grasas 0.2)
+	(grasas_saturadas 0.2)
+	(hidratos_de_carbono 6.5)
+	(hierro 0.0)
+	(potasio 19.5)
+	(proteinas 0.3)
+	(sodio 9.5)
+	(vitamina_a 0.0)
+	(vitamina_c 3.2))
+
+([ontologia_Class20000] of  IngredientePlato
+
+	(cantidad 2.0)
+	(ingrediente [ontologia_Class20033]))
+
+([ontologia_Class20001] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class24]))
+
+([ontologia_Class20007] of  Ingrediente
+
+	(nombre "Zanahoria")
+	(nutrientes [ontologia_Class2000700])
+	(tamano_racion 46.0)
+	(tipo_ingrediente Verdura))
+
+([ontologia_Class2000700] of  Nutrientes
+
+	(azucar 1.6)
+	(calcio 1.1)
+	(colesterol 0.0)
+	(energia 16.0)
+	(grasas 0.1)
+	(grasas_saturadas 0.0)
+	(hidratos_de_carbono 3.8)
+	(hierro 0.9)
+	(potasio 108.0)
+	(proteinas 0.3)
+	(sodio 27.0)
+	(vitamina_a 157.0)
+	(vitamina_c 2.8))
+
+([ontologia_Class20009] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class24]))
+
+([ontologia_Class20010] of  IngredientePlato
+
+	(cantidad 2.0)
+	(ingrediente [ontologia_Class10006]))
+
+([ontologia_Class20012] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class20007]))
+
+([ontologia_Class20014] of  IngredientePlato
+
+	(cantidad 0.5)
+	(ingrediente [ontologia_Class24]))
+
+([ontologia_Class20017] of  Plato
+
+	(coccion Frito)
+	(estacion Invierno Otono Primavera Verano)
+	(ingrediente_principal [ontologia_Class20018])
+	(ingredientes_secundarios
+		[ontologia_Class20020]
+		[ontologia_Class20022]
+		[ontologia_Class20024])
+	(nombre "Pollo salteado con espinacas")
+	(tipo_plato Principal))
+
+([ontologia_Class20018] of  IngredientePlato
+
+	(cantidad 0.75)
+	(ingrediente [ontologia_Class20019]))
+
+([ontologia_Class20019] of  Ingrediente
+
+	(nombre "Pechuga de pollo")
+	(nutrientes [ontologia_Class2001900])
+	(tamano_racion 120.0)
+	(tipo_ingrediente Carne))
+
+([ontologia_Class2001900] of  Nutrientes
+
+	(azucar 0.0)
+	(calcio 1.4)
+	(colesterol 102.0)
+	(energia 198.0)
+	(grasas 4.3)
+	(grasas_saturadas 1.2)
+	(hidratos_de_carbono 0.0)
+	(hierro 6.9)
+	(potasio 307.0)
+	(proteinas 37.0)
+	(sodio 89.0)
+	(vitamina_a 0.5)
+	(vitamina_c 0.0))
+
+([ontologia_Class20020] of  IngredientePlato
+
+	(cantidad 0.5)
+	(ingrediente [ontologia_Class70018]))
+
+([ontologia_Class2002100] of  Nutrientes
+
+	(azucar 0.3)
+	(calcio 0.4)
+	(colesterol 0.0)
+	(energia 14.0)
+	(grasas 0.1)
+	(grasas_saturadas 0.0)
+	(hidratos_de_carbono 3.2)
+	(hierro 0.9)
+	(potasio 77.0)
+	(proteinas 0.8)
+	(sodio 16.0)
+	(vitamina_a 0.1)
+	(vitamina_c 3.3))
+
+([ontologia_Class20022] of  IngredientePlato
+
+	(cantidad 3.5)
+	(ingrediente [ontologia_Class20023]))
+
+([ontologia_Class20023] of  Ingrediente
+
+	(nombre "Mayonesa")
+	(nombre_racion "cucharada")
+	(nutrientes [ontologia_Class2002300])
+	(tamano_racion 14.0)
+	(tipo_ingrediente Lacteo))
+
+([ontologia_Class2002300] of  Nutrientes
+
+	(azucar 0.1)
+	(calcio 0.1)
+	(colesterol 5.8)
+	(energia 94.0)
+	(grasas 10.0)
+	(grasas_saturadas 1.6)
+	(hidratos_de_carbono 0.1)
+	(hierro 0.2)
+	(potasio 2.8)
+	(proteinas 0.1)
+	(sodio 88.0)
+	(vitamina_a 0.2)
+	(vitamina_c 0.0))
+
+([ontologia_Class20024] of  IngredientePlato
+
+	(cantidad 3.8)
+	(ingrediente [ontologia_Class20025]))
+
+([ontologia_Class20025] of  Ingrediente
+
+	(nombre "Queso parmesano rallado")
+	(nombre_racion "cucharada")
+	(nutrientes [ontologia_Class2002500])
+	(tamano_racion 5.0)
+	(tipo_ingrediente Lacteo))
+
+([ontologia_Class2002500] of  Nutrientes
+
+	(azucar 0.0)
+	(calcio 3.3)
+	(colesterol 4.3)
+	(energia 21.0)
+	(grasas 1.4)
+	(grasas_saturadas 0.8)
+	(hidratos_de_carbono 0.7)
+	(hierro 0.1)
+	(potasio 9.0)
+	(proteinas 1.4)
+	(sodio 90.0)
+	(vitamina_a 1.0)
+	(vitamina_c 0.0))
+
+([ontologia_Class20026] of  Plato
+
+	(coccion Otros)
+	(estacion Invierno Otono Primavera Verano)
+	(ingrediente_principal [ontologia_Class20029])
+	(ingredientes_secundarios [ontologia_Class20027])
+	(nombre "Cafe con leche")
+	(tipo_plato Desayuno))
+
+([ontologia_Class20027] of  IngredientePlato
+
+	(cantidad 0.75)
+	(ingrediente [ontologia_Class20028]))
+
+([ontologia_Class20028] of  Ingrediente
+
+	(nombre "Cafe")
+	(nombre_racion "taza")
+	(nutrientes [ontologia_Class2002800])
+	(tamano_racion 237.0)
+	(tipo_ingrediente Otro))
+
+([ontologia_Class2002800] of  Nutrientes
+
+	(azucar 0.0)
+	(calcio 0.4)
+	(colesterol 0.0)
+	(energia 2.4)
+	(grasas 0.1)
+	(grasas_saturadas 0.0)
+	(hidratos_de_carbono 0.0)
+	(hierro 0.1)
+	(potasio 116.0)
+	(proteinas 0.3)
+	(sodio 4.7)
+	(vitamina_a 0.0)
+	(vitamina_c 0.0))
+
+([ontologia_Class20029] of  IngredientePlato
+
+	(cantidad 0.3)
+	(ingrediente [ontologia_Class18]))
+
+([ontologia_Class20030] of  Plato
+
+	(coccion Frito)
+	(estacion Invierno Otono Primavera Verano)
+	(ingrediente_principal [ontologia_Class20000])
+	(ingredientes_secundarios
+		[ontologia_Class20035]
+		[ontologia_Class20001])
+	(nombre "Tortilla de patatas")
+	(tipo_plato Principal))
+
+([ontologia_Class20031] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class24]))
+
+([ontologia_Class20032] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class20033]))
+
+([ontologia_Class20033] of  Ingrediente
+
+	(nombre "Huevo")
+	(nutrientes [ontologia_Class2003300])
+	(tamano_racion 50.0)
+	(tipo_ingrediente Huevos))
+
+([ontologia_Class2003300] of  Nutrientes
+
+	(azucar 0.2)
+	(calcio 2.2)
+	(colesterol 186.0)
+	(energia 72.0)
+	(grasas 4.8)
+	(grasas_saturadas 1.6)
+	(hidratos_de_carbono 0.4)
+	(hierro 4.9)
+	(potasio 69.0)
+	(proteinas 6.3)
+	(sodio 71.0)
+	(vitamina_a 5.4)
+	(vitamina_c 0.0))
+
+([ontologia_Class20034] of  IngredientePlato
+
+	(cantidad 0.25)
+	(ingrediente [ontologia_Class10041]))
+
+([ontologia_Class20035] of  IngredientePlato
+
+	(cantidad 1.2)
+	(ingrediente [ontologia_Class10020]))
+
+([ontologia_Class21] of  Ingrediente
+
+	(nombre "Pan de molde")
+	(nombre_racion "rebanada")
+	(nutrientes [ontologia_Class2100])
+	(tamano_racion 29.0)
+	(tipo_ingrediente Cereal))
+
+([ontologia_Class2100] of  Nutrientes
+
+	(azucar 1.6)
+	(calcio 3.2)
+	(colesterol 0.0)
+	(energia 77.0)
+	(grasas 1.0)
+	(grasas_saturadas 0.2)
+	(hidratos_de_carbono 14.0)
+	(hierro 5.8)
+	(potasio 37.0)
+	(proteinas 2.6)
+	(sodio 142.0)
+	(vitamina_a 0.0)
+	(vitamina_c 0.0))
+
+([ontologia_Class22] of  Ingrediente
+
+	(nombre "Mermelada")
+	(nombre_racion "cucharada")
+	(nutrientes [ontologia_Class2200])
+	(tamano_racion 20.0)
+	(tipo_ingrediente Cereal))
+
+([ontologia_Class2200] of  Nutrientes
+
+	(azucar 12.0)
+	(calcio 0.6)
+	(colesterol 0.0)
+	(energia 49.0)
+	(grasas 0.0)
+	(grasas_saturadas 0.0)
+	(hidratos_de_carbono 13.0)
+	(hierro 0.2)
+	(potasio 7.4)
+	(proteinas 0.1)
+	(sodio 11.0)
+	(vitamina_a 0.3)
+	(vitamina_c 1.6))
+
+([ontologia_Class23] of  Ingrediente
+
+	(nombre "Zumo de naranja")
+	(nombre_racion "vaso")
+	(nutrientes [ontologia_Class2300])
+	(tamano_racion 249.0)
+	(tipo_ingrediente Fruta))
+
+([ontologia_Class2300] of  Nutrientes
+
+	(azucar 21.0)
+	(calcio 27.0)
+	(colesterol 0.0)
+	(energia 117.0)
+	(grasas 0.3)
+	(grasas_saturadas 0.0)
+	(hidratos_de_carbono 28.0)
+	(hierro 1.8)
+	(potasio 443.0)
+	(proteinas 1.7)
+	(sodio 5.0)
+	(vitamina_a 2.1)
+	(vitamina_c 139.0))
+
+([ontologia_Class24] of  Ingrediente
+
+	(nombre "Patata")
+	(nutrientes [ontologia_Class2400])
+	(tamano_racion 173.0)
+	(tipo_ingrediente Cereal))
+
+([ontologia_Class2400] of  Nutrientes
+
+	(azucar 2.0)
+	(calcio 2.0)
+	(colesterol 0.0)
+	(energia 161.0)
+	(grasas 0.2)
+	(grasas_saturadas 0.1)
+	(hidratos_de_carbono 37.0)
+	(hierro 10.0)
+	(potasio 926.0)
+	(proteinas 4.3)
+	(sodio 17.0)
+	(vitamina_a 0.3)
+	(vitamina_c 28.0))
+
+([ontologia_Class25] of  Ingrediente
+
+	(nombre "Atun en lata")
+	(nombre_racion "lata")
+	(nutrientes [ontologia_Class2500])
+	(tamano_racion 85.0)
+	(tipo_ingrediente Pescado))
+
+([ontologia_Class2500] of  Nutrientes
+
+	(azucar 0.0)
+	(calcio 0.3)
+	(colesterol 40.0)
+	(energia 111.0)
+	(grasas 0.5)
+	(grasas_saturadas 0.2)
+	(hidratos_de_carbono 0.0)
+	(hierro 4.3)
+	(potasio 448.0)
+	(proteinas 25.0)
+	(sodio 46.0)
+	(vitamina_a 1.1)
+	(vitamina_c 0.0))
+
+([ontologia_Class27] of  Ingrediente
+
+	(nombre "Huevo duro")
+	(nutrientes [ontologia_Class2700])
+	(tamano_racion 50.0)
+	(tipo_ingrediente Huevos))
+
+([ontologia_Class2700] of  Nutrientes
+
+	(azucar 0.6)
+	(calcio 1.9)
+	(colesterol 187.0)
+	(energia 78.0)
+	(grasas 5.3)
+	(grasas_saturadas 1.6)
+	(hidratos_de_carbono 0.6)
+	(hierro 3.3)
+	(potasio 63.0)
+	(proteinas 6.3)
+	(sodio 62.0)
+	(vitamina_a 5.2)
+	(vitamina_c 0.0))
+
+([ontologia_Class4] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class18]))
+
+([ontologia_Class40000] of  Plato
+
+	(coccion Crudo)
+	(estacion Primavera Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class50005])
+	(nombre "Galletas saladas integrales")
+	(nutrientes [ontologia_Class40004])
+	(tipo_plato Desayuno))
+
+([ontologia_Class40001] of  Ingrediente
+
+	(nombre "Galleta salada integral")
+	(nutrientes [ontologia_Class40002])
+	(tamano_racion 18.0)
+	(tipo_ingrediente Cereal))
+
+([ontologia_Class40002] of  Nutrientes
+
+	(azucar 0.1)
+	(calcio 0.1)
+	(colesterol 0.0)
+	(energia 20.0)
+	(grasas 0.7)
+	(grasas_saturadas 0.1)
+	(hidratos_de_carbono 3.2)
+	(hierro 0.8)
+	(potasio 16.0)
+	(proteinas 0.5)
+	(sodio 32.0)
+	(vitamina_a 0.0)
+	(vitamina_c 0.0))
+
+([ontologia_Class40004] of  Nutrientes
+
+	(azucar 0.0)
+	(calcio 3.9)
+	(colesterol 58.0)
+	(energia 174.0)
+	(grasas 12.6)
+	(grasas_saturadas 2.8)
+	(hidratos_de_carbono 0.0)
+	(hierro 11.0)
+	(potasio 382.0)
+	(proteinas 18.5)
+	(sodio 1450.0)
+	(vitamina_a 19.0)
+	(vitamina_c 44.0))
+
+([ontologia_Class5] of  IngredientePlato
+
+	(cantidad 2.0)
+	(ingrediente [ontologia_Class20]))
+
+([ontologia_Class50000] of  Plato
+
+	(coccion Crudo)
+	(estacion Primavera Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class50001])
+	(ingredientes_secundarios [ontologia_Class50002])
+	(nombre "Pan con tomate")
+	(nutrientes [ontologia_Class40004])
+	(tipo_plato Acompanamiento))
+
+([ontologia_Class50001] of  IngredientePlato
+
+	(cantidad 0.25)
+	(ingrediente [ontologia_Class50053]))
+
+([ontologia_Class50002] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class10006]))
+
+([ontologia_Class50003] of  Ingrediente
+
+	(nombre "Garbanzos")
+	(nombre_racion "bote")
+	(nutrientes [ontologia_Class50004])
+	(tamano_racion 253.0)
+	(tipo_ingrediente Legumbre))
+
+([ontologia_Class50004] of  Nutrientes
+
+	(azucar 10.0)
+	(calcio 8.8)
+	(colesterol 0.0)
+	(energia 352.0)
+	(grasas 7.0)
+	(grasas_saturadas 0.5)
+	(hidratos_de_carbono 57.0)
+	(hierro 15.0)
+	(potasio 319.0)
+	(proteinas 18.0)
+	(sodio 622.0)
+	(vitamina_a 1.2)
+	(vitamina_c 0.4))
+
+([ontologia_Class50005] of  IngredientePlato
+
+	(cantidad 8.0)
+	(ingrediente [ontologia_Class40001]))
+
+([ontologia_Class50006] of  Ingrediente
+
+	(nombre "Zumo de melocoton")
+	(nombre_racion "vaso")
+	(nutrientes [ontologia_Class50007])
+	(tamano_racion 249.0)
+	(tipo_ingrediente Fruta))
+
+([ontologia_Class50007] of  Nutrientes
+
+	(azucar 31.0)
+	(calcio 1.0)
+	(colesterol 0.0)
+	(energia 134.0)
+	(grasas 0.1)
+	(grasas_saturadas 0.0)
+	(hidratos_de_carbono 35.0)
+	(hierro 2.6)
+	(potasio 100.0)
+	(proteinas 0.7)
+	(sodio 17.0)
+	(vitamina_a 13.0)
+	(vitamina_c 73.0))
+
+([ontologia_Class50008] of  Plato
+
+	(coccion Crudo)
+	(estacion Verano Otono Primavera)
+	(ingrediente_principal [ontologia_Class50009])
+	(nombre "Zumo de melocoton")
+	(nutrientes [ontologia_Class40004])
+	(tipo_plato Desayuno))
+
+([ontologia_Class50009] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class50006]))
+
+([ontologia_Class50010] of  Plato
+
+	(coccion Crudo)
+	(estacion Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class50013])
+	(nombre "Zumo de manzana")
+	(nutrientes [ontologia_Class40004])
+	(tipo_plato Desayuno))
+
+([ontologia_Class50011] of  Ingrediente
+
+	(nombre "Zumo de manzana")
+	(nombre_racion "vaso")
+	(nutrientes [ontologia_Class50012])
+	(tamano_racion 248.0)
+	(tipo_ingrediente Fruta))
+
+([ontologia_Class50012] of  Nutrientes
+
+	(azucar 24.0)
+	(calcio 1.5)
+	(colesterol 0.0)
+	(energia 114.0)
+	(grasas 0.3)
+	(grasas_saturadas 0.1)
+	(hidratos_de_carbono 28.0)
+	(hierro 1.7)
+	(potasio 250.0)
+	(proteinas 0.3)
+	(sodio 9.9)
+	(vitamina_a 0.1)
+	(vitamina_c 159.0))
+
+([ontologia_Class50013] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class50011]))
+
+([ontologia_Class50015] of  Nutrientes
+
+	(azucar 1.4)
+	(calcio 1.0)
+	(colesterol 0.0)
+	(energia 189.0)
+	(grasas 0.8)
+	(grasas_saturadas 0.0)
+	(hidratos_de_carbono 38.0)
+	(hierro 9.0)
+	(potasio 114.0)
+	(proteinas 6.7)
+	(sodio 6.0)
+	(vitamina_a 0.0)
+	(vitamina_c 0.0))
+
+([ontologia_Class50017] of  IngredientePlato
+
+	(cantidad 1.0))
+
+([ontologia_Class50018] of  IngredientePlato
+
+	(cantidad 4.0)
+	(ingrediente [ontologia_Class10023]))
+
+([ontologia_Class50019] of  IngredientePlato
+
+	(cantidad 0.25)
+	(ingrediente [ontologia_Class10041]))
+
+([ontologia_Class50021] of  IngredientePlato
+
+	(cantidad 1.0))
+
+([ontologia_Class50022] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class10020]))
+
+([ontologia_Class50023] of  IngredientePlato
+
+	(cantidad 1.0))
+
+([ontologia_Class50024] of  Plato
+
+	(coccion Hervido)
+	(estacion Primavera Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class50025])
+	(ingredientes_secundarios
+		[ontologia_Class50028]
+		[ontologia_Class50031]
+		[ontologia_Class50034]
+		[ontologia_Class50037]
+		[ontologia_Class50041])
+	(nombre "Espaguetis napolitana con queso")
+	(nutrientes [ontologia_Class50040])
+	(tipo_plato Principal))
+
+([ontologia_Class50025] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class50026]))
+
+([ontologia_Class50026] of  Ingrediente
+
+	(nombre "Pasta")
+	(nombre_racion "medida")
+	(nutrientes [ontologia_Class50027])
+	(tamano_racion 125.0)
+	(tipo_ingrediente Cereal))
+
+([ontologia_Class50027] of  Nutrientes
+
+	(azucar 1.4)
+	(calcio 1.0)
+	(colesterol 0.0)
+	(energia 189.0)
+	(grasas 0.8)
+	(grasas_saturadas 0.0)
+	(hidratos_de_carbono 38.0)
+	(hierro 9.0)
+	(potasio 114.0)
+	(proteinas 6.7)
+	(sodio 6.0)
+	(vitamina_a 0.0)
+	(vitamina_c 0.0))
+
+([ontologia_Class50028] of  IngredientePlato
+
+	(cantidad 4.0)
+	(ingrediente [ontologia_Class10006]))
+
+([ontologia_Class50030] of  Nutrientes
+
+	(azucar 3.2)
+	(calcio 0.9)
+	(colesterol 0.0)
+	(energia 22.0)
+	(grasas 0.3)
+	(grasas_saturadas 0.0)
+	(hidratos_de_carbono 4.8)
+	(hierro 1.8)
+	(potasio 292.0)
+	(proteinas 1.1)
+	(sodio 6.2)
+	(vitamina_a 20.0)
+	(vitamina_c 28.0))
+
+([ontologia_Class50031] of  IngredientePlato
+
+	(cantidad 0.25)
+	(ingrediente [ontologia_Class10041]))
+
+([ontologia_Class50033] of  Nutrientes
+
+	(azucar 4.4)
+	(calcio 1.6)
+	(colesterol 0.0)
+	(energia 41.0)
+	(grasas 0.2)
+	(grasas_saturadas 0.0)
+	(hidratos_de_carbono 9.5)
+	(hierro 1.3)
+	(potasio 156.0)
+	(proteinas 1.3)
+	(sodio 2.8)
+	(vitamina_a 0.0)
+	(vitamina_c 8.1))
+
+([ontologia_Class50034] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class10020]))
+
+([ontologia_Class50036] of  Nutrientes
+
+	(azucar 0.0)
+	(calcio 0.0)
+	(colesterol 0.0)
+	(energia 119.0)
+	(grasas 14.0)
+	(grasas_saturadas 1.9)
+	(hidratos_de_carbono 0.0)
+	(hierro 0.4)
+	(potasio 0.1)
+	(proteinas 0.0)
+	(sodio 0.3)
+	(vitamina_a 0.0)
+	(vitamina_c 0.0))
+
+([ontologia_Class50037] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class50038]))
+
+([ontologia_Class50038] of  Ingrediente
+
+	(nombre "Ajo")
+	(nombre_racion "diente")
+	(nutrientes [ontologia_Class50039])
+	(tamano_racion 3.0)
+	(tipo_ingrediente Verdura))
+
+([ontologia_Class50039] of  Nutrientes
+
+	(azucar 0.0)
+	(calcio 0.4)
+	(colesterol 0.0)
+	(energia 4.5)
+	(grasas 0.0)
+	(grasas_saturadas 0.0)
+	(hidratos_de_carbono 1.0)
+	(hierro 0.3)
+	(potasio 12.0)
+	(proteinas 0.2)
+	(sodio 0.5)
+	(vitamina_a 0.0)
+	(vitamina_c 1.6))
+
+([ontologia_Class50040] of  Nutrientes
+
+	(azucar 29.4)
+	(calcio 11.4)
+	(colesterol 14.4)
+	(energia 336.0)
+	(grasas 19.2)
+	(grasas_saturadas 11.4)
+	(hidratos_de_carbono 35.4)
+	(hierro 22.2)
+	(potasio 416.0)
+	(proteinas 5.7)
+	(sodio 56.4)
+	(vitamina_a 3.8)
+	(vitamina_c 0.0))
+
+([ontologia_Class50041] of  IngredientePlato
+
+	(cantidad 3.0)
+	(ingrediente [ontologia_Class20025]))
+
+([ontologia_Class50042] of  Plato
+
+	(coccion Horneado)
+	(estacion Primavera Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class50043])
+	(nombre "Pechuga de pollo al horno")
+	(nutrientes [ontologia_Class40004])
+	(tipo_plato Principal))
+
+([ontologia_Class50043] of  IngredientePlato
+
+	(cantidad 1.5)
+	(ingrediente [ontologia_Class20019]))
+
+([ontologia_Class50045] of  Ingrediente
+
+	(nombre "Berenjena")
+	(nutrientes [ontologia_Class50046])
+	(tamano_racion 566.0)
+	(tipo_ingrediente Verdura))
+
+([ontologia_Class50046] of  Nutrientes
+
+	(azucar 18.0)
+	(calcio 2.6)
+	(colesterol 0.0)
+	(energia 198.0)
+	(grasas 1.3)
+	(grasas_saturadas 0.3)
+	(hidratos_de_carbono 49.0)
+	(hierro 7.9)
+	(potasio 696.0)
+	(proteinas 4.7)
+	(sodio 5.7)
+	(vitamina_a 4.2)
+	(vitamina_c 12.0))
+
+([ontologia_Class50047] of  Plato
+
+	(coccion Horneado)
+	(estacion Primavera Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class50048])
+	(nombre "Berenjena asada")
+	(nutrientes [ontologia_Class40004])
+	(tipo_plato Acompanamiento))
+
+([ontologia_Class50048] of  IngredientePlato
+
+	(cantidad 0.5)
+	(ingrediente [ontologia_Class50045]))
+
+([ontologia_Class50049] of  Ingrediente
+
+	(nombre "Melon")
+	(nombre_racion "rodaja")
+	(nutrientes [ontologia_Class50050])
+	(tamano_racion 150.0)
+	(tipo_ingrediente Fruta))
+
+([ontologia_Class50050] of  Nutrientes
+
+	(azucar 14.0)
+	(calcio 1.2)
+	(colesterol 0.0)
+	(energia 60.0)
+	(grasas 0.3)
+	(grasas_saturadas 0.0)
+	(hidratos_de_carbono 14.0)
+	(hierro 2.1)
+	(potasio 473.0)
+	(proteinas 1.5)
+	(sodio 0.0)
+	(vitamina_a 120.0)
+	(vitamina_c 108.0))
+
+([ontologia_Class50051] of  Plato
+
+	(coccion Crudo)
+	(estacion Verano)
+	(ingrediente_principal [ontologia_Class50052])
+	(nombre "Melon")
+	(nutrientes [ontologia_Class40004])
+	(tipo_plato Postre))
+
+([ontologia_Class50052] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class50049]))
+
+([ontologia_Class50053] of  Ingrediente
+
+	(nombre "Pan")
+	(nombre_racion "barra")
+	(nutrientes [ontologia_Class50054])
+	(tamano_racion 250.0)
+	(tipo_ingrediente Cereal))
+
+([ontologia_Class50054] of  Nutrientes
+
+	(azucar 11.6)
+	(calcio 10.0)
+	(colesterol 0.0)
+	(energia 679.0)
+	(grasas 6.0)
+	(grasas_saturadas 1.3)
+	(hidratos_de_carbono 129.6)
+	(hierro 54.0)
+	(potasio 292.0)
+	(proteinas 27.0)
+	(sodio 1504.0)
+	(vitamina_a 0.0)
+	(vitamina_c 0.0))
+
+([ontologia_Class50056] of  Plato
+
+	(coccion Crudo)
+	(estacion Primavera Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class50059])
+	(ingredientes_secundarios [ontologia_Class50061])
+	(nombre "Bocadillo de queso")
+	(nutrientes [ontologia_Class40004])
+	(tipo_plato Desayuno))
+
+([ontologia_Class50057] of  Ingrediente
+
+	(nombre "Queso")
+	(nombre_racion "loncha")
+	(nutrientes [ontologia_Class50058])
+	(tamano_racion 28.0)
+	(tipo_ingrediente Lacteo))
+
+([ontologia_Class50058] of  Nutrientes
+
+	(azucar 0.1)
+	(calcio 15.0)
+	(colesterol 28.0)
+	(energia 113.0)
+	(grasas 9.3)
+	(grasas_saturadas 5.3)
+	(hidratos_de_carbono 0.9)
+	(hierro 0.2)
+	(potasio 21.0)
+	(proteinas 6.4)
+	(sodio 183.0)
+	(vitamina_a 7.0)
+	(vitamina_c 0.0))
+
+([ontologia_Class50059] of  IngredientePlato
+
+	(cantidad 0.4)
+	(ingrediente [ontologia_Class50053]))
+
+([ontologia_Class50061] of  IngredientePlato
+
+	(cantidad 2.0)
+	(ingrediente [ontologia_Class50057]))
+
+([ontologia_Class50062] of  Ingrediente
+
+	(nombre "Anchoa")
+	(nutrientes [ontologia_Class50063])
+	(tamano_racion 8.0)
+	(tipo_ingrediente Pescado))
+
+([ontologia_Class50063] of  Nutrientes
+
+	(azucar 0.0)
+	(calcio 1.4)
+	(colesterol 6.8)
+	(energia 16.8)
+	(grasas 0.8)
+	(grasas_saturadas 0.2)
+	(hidratos_de_carbono 0.0)
+	(hierro 2.0)
+	(potasio 44.0)
+	(proteinas 2.4)
+	(sodio 294.0)
+	(vitamina_a 0.1)
+	(vitamina_c 0.0))
+
+([ontologia_Class50064] of  Plato
+
+	(coccion Crudo)
+	(estacion Primavera Verano Otono)
+	(ingrediente_principal [ontologia_Class50069])
+	(ingredientes_secundarios
+		[ontologia_Class50067]
+		[ontologia_Class50070])
+	(nombre "Cogollos con anchoas")
+	(nutrientes [ontologia_Class40004])
+	(tipo_plato Principal))
+
+([ontologia_Class50065] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class10056]))
+
+([ontologia_Class50067] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class10056]))
+
+([ontologia_Class50069] of  IngredientePlato
+
+	(cantidad 5.0)
+	(ingrediente [ontologia_Class50062]))
+
+([ontologia_Class50070] of  IngredientePlato
+
+	(cantidad 0.5)
+	(ingrediente [ontologia_Class10020]))
+
+([ontologia_Class50072] of  Ingrediente
+
+	(nombre "Yogur de frutas")
+	(nutrientes [ontologia_Class50073])
+	(tamano_racion 120.0)
+	(tipo_ingrediente Lacteo))
+
+([ontologia_Class50073] of  Nutrientes
+
+	(azucar 22.4)
+	(calcio 14.0)
+	(colesterol 2.4)
+	(energia 113.4)
+	(grasas 0.2)
+	(grasas_saturadas 0.1)
+	(hidratos_de_carbono 22.4)
+	(hierro 0.5)
+	(potasio 231.0)
+	(proteinas 5.3)
+	(sodio 69.3)
+	(vitamina_a 0.3)
+	(vitamina_c 1.4))
+
+([ontologia_Class50074] of  Plato
+
+	(coccion Crudo)
+	(estacion Invierno Otono Primavera Verano)
+	(ingrediente_principal [ontologia_Class50075])
+	(nombre "Yogur de frutas")
+	(tipo_plato Desayuno Postre))
+
+([ontologia_Class50075] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class50072]))
+
+([ontologia_Class50077] of  Nutrientes
+
+	(azucar 8.5)
+	(calcio 16.9)
+	(colesterol 7.1)
+	(energia 75.5)
+	(grasas 1.8)
+	(grasas_saturadas 1.2)
+	(hidratos_de_carbono 8.5)
+	(hierro 0.5)
+	(potasio 281.0)
+	(proteinas 6.3)
+	(sodio 84.0)
+	(vitamina_a 1.2)
+	(vitamina_c 1.6))
+
+([ontologia_Class50078] of  Ingrediente
+
+	(nombre "Fruta")
+	(nombre_racion "bol")
+	(nutrientes [ontologia_Class50079])
+	(tamano_racion 150.0)
+	(tipo_ingrediente Fruta))
+
+([ontologia_Class50079] of  Nutrientes
+
+	(azucar 16.0)
+	(calcio 2.0)
+	(colesterol 0.0)
+	(energia 97.0)
+	(grasas 0.5)
+	(grasas_saturadas 0.1)
+	(hidratos_de_carbono 24.0)
+	(hierro 2.9)
+	(potasio 364.0)
+	(proteinas 1.4)
+	(sodio 2.6)
+	(vitamina_a 1.9)
+	(vitamina_c 120.0))
+
+([ontologia_Class50080] of  Plato
+
+	(coccion Crudo)
+	(estacion Primavera Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class50083])
+	(ingredientes_secundarios [ontologia_Class50084])
+	(nombre "Yogur griego con trozos de fruta")
+	(nutrientes [ontologia_Class40004])
+	(tipo_plato Postre Desayuno))
+
+([ontologia_Class50081] of  Ingrediente
+
+	(nombre "Yogur griego")
+	(nutrientes [ontologia_Class50082])
+	(tamano_racion 120.0)
+	(tipo_ingrediente Lacteo))
+
+([ontologia_Class50082] of  Nutrientes
+
+	(azucar 3.9)
+	(calcio 10.0)
+	(colesterol 6.1)
+	(energia 71.0)
+	(grasas 0.5)
+	(grasas_saturadas 0.1)
+	(hidratos_de_carbono 4.4)
+	(hierro 0.5)
+	(potasio 172.0)
+	(proteinas 12.2)
+	(sodio 43.0)
+	(vitamina_a 0.1)
+	(vitamina_c 0.0))
+
+([ontologia_Class50083] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class50081]))
+
+([ontologia_Class50084] of  IngredientePlato
+
+	(cantidad 0.5)
+	(ingrediente [ontologia_Class50078]))
+
+([ontologia_Class50085] of  Ingrediente
+
+	(nombre "Nuez")
+	(nutrientes [ontologia_Class50086])
+	(tamano_racion 4.0)
+	(tipo_ingrediente Otro))
+
+([ontologia_Class50086] of  Nutrientes
+
+	(azucar 0.1)
+	(calcio 0.3)
+	(colesterol 0.0)
+	(energia 26.0)
+	(grasas 2.6)
+	(grasas_saturadas 0.2)
+	(hidratos_de_carbono 0.6)
+	(hierro 0.7)
+	(potasio 18.0)
+	(proteinas 0.6)
+	(sodio 0.1)
+	(vitamina_a 0.0)
+	(vitamina_c 0.1))
+
+([ontologia_Class50087] of  Plato
+
+	(coccion Crudo)
+	(estacion Primavera Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class50094])
+	(ingredientes_secundarios [ontologia_Class50088])
+	(nombre "Yogur con nueces")
+	(nutrientes [ontologia_Class40004])
+	(tipo_plato Desayuno Postre))
+
+([ontologia_Class50088] of  IngredientePlato
+
+	(cantidad 3.0)
+	(ingrediente [ontologia_Class50085]))
+
+([ontologia_Class50089] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class10035]))
+
+([ontologia_Class50091] of  Ingrediente
+
+	(nombre "Pasas")
+	(nombre_racion "punyado")
+	(nutrientes [ontologia_Class50092])
+	(tamano_racion 43.0)
+	(tipo_ingrediente Fruta))
+
+([ontologia_Class50092] of  Nutrientes
+
+	(azucar 25.0)
+	(calcio 1.7)
+	(colesterol 0.0)
+	(energia 129.0)
+	(grasas 0.2)
+	(grasas_saturadas 0.0)
+	(hidratos_de_carbono 34.0)
+	(hierro 4.5)
+	(potasio 322.0)
+	(proteinas 1.3)
+	(sodio 4.7)
+	(vitamina_a 0.0)
+	(vitamina_c 1.6))
+
+([ontologia_Class50094] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class50081]))
+
+([ontologia_Class50096] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class50091]))
+
+([ontologia_Class50097] of  Ingrediente
+
+	(nombre "Cereales de desayuno")
+	(nombre_racion "taza")
+	(nutrientes [ontologia_Class50098])
+	(tamano_racion 30.0)
+	(tipo_ingrediente Cereal))
+
+([ontologia_Class50098] of  Nutrientes
+
+	(azucar 1.3)
+	(calcio 9.5)
+	(colesterol 0.0)
+	(energia 115.0)
+	(grasas 2.1)
+	(grasas_saturadas 0.5)
+	(hidratos_de_carbono 23.1)
+	(hierro 57.2)
+	(potasio 196.0)
+	(proteinas 3.7)
+	(sodio 152.9)
+	(vitamina_a 19.8)
+	(vitamina_c 11.0))
+
+([ontologia_Class50099] of  Plato
+
+	(coccion Crudo)
+	(estacion Primavera Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class50100])
+	(ingredientes_secundarios [ontologia_Class50101])
+	(nombre "Cereales con leche")
+	(nutrientes [ontologia_Class40004])
+	(tipo_plato Desayuno))
+
+([ontologia_Class50100] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class50097]))
+
+([ontologia_Class50101] of  IngredientePlato
+
+	(cantidad 0.5)
+	(ingrediente [ontologia_Class18]))
+
+([ontologia_Class60000] of  Ingrediente
+
+	(nombre "Judias Verdes")
+	(nombre_racion "bol")
+	(nutrientes [ontologia_Class60001])
+	(tamano_racion 100.0)
+	(tipo_ingrediente Verdura))
+
+([ontologia_Class60001] of  Nutrientes
+
+	(azucar 3.3)
+	(calcio 2.8)
+	(colesterol 0.0)
+	(energia 31.0)
+	(grasas 0.2)
+	(grasas_saturadas 0.1)
+	(hidratos_de_carbono 7.0)
+	(hierro 5.7)
+	(potasio 211.0)
+	(proteinas 1.8)
+	(sodio 6.0)
+	(vitamina_a 14.0)
+	(vitamina_c 20.0))
+
+([ontologia_Class60002] of  Plato
+
+	(coccion Hervido)
+	(estacion Primavera Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class60003])
+	(ingredientes_secundarios
+		[ontologia_Class60004]
+		[ontologia_Class70005]
+		[ontologia_Class70006])
+	(nombre "Menestra")
+	(nutrientes [ontologia_Class60124])
+	(tipo_plato Principal))
+
+([ontologia_Class60003] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class60000]))
+
+([ontologia_Class60004] of  IngredientePlato
+
+	(cantidad 2.0)
+	(ingrediente [ontologia_Class20007]))
+
+([ontologia_Class60005] of  Plato
+
+	(coccion Hervido)
+	(estacion Primavera Verano Otono)
+	(ingrediente_principal [ontologia_Class60006])
+	(ingredientes_secundarios
+		[ontologia_Class60007]
+		[ontologia_Class60008])
+	(nombre "Ensalada de garbanzos con huevo")
+	(nutrientes [ontologia_Class40004])
+	(tipo_plato Principal))
+
+([ontologia_Class60006] of  IngredientePlato
+
+	(cantidad 0.8)
+	(ingrediente [ontologia_Class50003]))
+
+([ontologia_Class60007] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class27]))
+
+([ontologia_Class60008] of  IngredientePlato
+
+	(cantidad 0.5)
+	(ingrediente [ontologia_Class10023]))
+
+([ontologia_Class60009] of  Ingrediente
+
+	(nombre "Sepia")
+	(nutrientes [ontologia_Class60010])
+	(tamano_racion 150.0)
+	(tipo_ingrediente Pescado))
+
+([ontologia_Class60010] of  Nutrientes
+
+	(azucar 0.0)
+	(calcio 2.8)
+	(colesterol 165.0)
+	(energia 113.0)
+	(grasas 1.35)
+	(grasas_saturadas 0.23)
+	(hidratos_de_carbono 1.0)
+	(hierro 15.0)
+	(potasio 409.0)
+	(proteinas 24.1)
+	(sodio 580.0)
+	(vitamina_a 2.9)
+	(vitamina_c 9.5))
+
+([ontologia_Class60011] of  Plato
+
+	(coccion Plancha)
+	(estacion Primavera Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class60012])
+	(nombre "Sepia a la plancha")
+	(nutrientes [ontologia_Class40004])
+	(tipo_plato Principal))
+
+([ontologia_Class60012] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class60009]))
+
+([ontologia_Class60013] of  Plato
+
+	(coccion Frito)
+	(estacion Primavera Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class60014])
+	(ingredientes_secundarios [ontologia_Class60015])
+	(nombre "Chips de calabacin")
+	(nutrientes [ontologia_Class40004])
+	(tipo_plato Acompanamiento))
+
+([ontologia_Class60014] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class10040]))
+
+([ontologia_Class60015] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class10020]))
+
+([ontologia_Class60016] of  Plato
+
+	(coccion Hervido)
+	(estacion Primavera Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class60017])
+	(ingredientes_secundarios
+		[ontologia_Class60018]
+		[ontologia_Class60023])
+	(nombre "Leche merengada")
+	(nutrientes [ontologia_Class40004])
+	(tipo_plato Postre))
+
+([ontologia_Class60017] of  IngredientePlato
+
+	(cantidad 0.5)
+	(ingrediente [ontologia_Class18]))
+
+([ontologia_Class60018] of  IngredientePlato
+
+	(cantidad 4.0)
+	(ingrediente [ontologia_Class60019]))
+
+([ontologia_Class60019] of  Ingrediente
+
+	(nombre "Azucar")
+	(nombre_racion "cucharadita")
+	(nutrientes [ontologia_Class60020])
+	(tamano_racion 4.2)
+	(tipo_ingrediente Otro))
+
+([ontologia_Class60020] of  Nutrientes
+
+	(azucar 4.2)
+	(calcio 0.0)
+	(colesterol 0.0)
+	(energia 16.0)
+	(grasas 0.0)
+	(grasas_saturadas 0.0)
+	(hidratos_de_carbono 4.2)
+	(hierro 0.0)
+	(potasio 0.0)
+	(proteinas 0.0)
+	(sodio 0.0)
+	(vitamina_a 0.0)
+	(vitamina_c 0.0))
+
+([ontologia_Class60021] of  Ingrediente
+
+	(nombre "Clara de huevo")
+	(nombre_racion "cucharada")
+	(nutrientes [ontologia_Class60022])
+	(tamano_racion 15.0)
+	(tipo_ingrediente Huevos))
+
+([ontologia_Class60022] of  Nutrientes
+
+	(azucar 0.0)
+	(calcio 0.1)
+	(colesterol 0.0)
+	(energia 8.0)
+	(grasas 0.0)
+	(grasas_saturadas 0.0)
+	(hidratos_de_carbono 0.1)
+	(hierro 0.1)
+	(potasio 25.0)
+	(proteinas 1.7)
+	(sodio 25.3)
+	(vitamina_a 0.0)
+	(vitamina_c 0.0))
+
+([ontologia_Class60023] of  IngredientePlato
+
+	(cantidad 4.0)
+	(ingrediente [ontologia_Class60021]))
+
+([ontologia_Class60024] of  Ingrediente
+
+	(nombre "Bizcocho")
+	(nombre_racion "trozo pequeno")
+	(nutrientes [ontologia_Class60025])
+	(tamano_racion 38.0)
+	(tipo_ingrediente Cereal))
+
+([ontologia_Class60025] of  Nutrientes
+
+	(azucar 14.0)
+	(calcio 2.0)
+	(colesterol 39.0)
+	(energia 110.0)
+	(grasas 1.0)
+	(grasas_saturadas 0.3)
+	(hidratos_de_carbono 23.0)
+	(hierro 5.7)
+	(potasio 38.0)
+	(proteinas 2.1)
+	(sodio 237.0)
+	(vitamina_a 1.2)
+	(vitamina_c 0.0))
+
+([ontologia_Class60026] of  Plato
+
+	(coccion Horneado)
+	(estacion Primavera Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class60027])
+	(nombre "Bizcocho")
+	(nutrientes [ontologia_Class40004])
+	(tipo_plato Desayuno))
+
+([ontologia_Class60027] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class60024]))
+
+([ontologia_Class60028] of  Plato
+
+	(coccion Horneado)
+	(estacion Primavera Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class60029])
+	(nombre "Patata asada")
+	(nutrientes [ontologia_Class40004])
+	(tipo_plato Acompanamiento))
+
+([ontologia_Class60029] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class24]))
+
+([ontologia_Class60030] of  Ingrediente
+
+	(nombre "Champinyon")
+	(nutrientes [ontologia_Class60031])
+	(tamano_racion 12.0)
+	(tipo_ingrediente Verdura))
+
+([ontologia_Class60031] of  Nutrientes
+
+	(azucar 0.3)
+	(calcio 0.1)
+	(colesterol 0.0)
+	(energia 3.4)
+	(grasas 0.1)
+	(grasas_saturadas 0.0)
+	(hidratos_de_carbono 0.6)
+	(hierro 1.2)
+	(potasio 43.0)
+	(proteinas 0.3)
+	(sodio 0.2)
+	(vitamina_a 0.0)
+	(vitamina_c 0.8))
+
+([ontologia_Class60032] of  Plato
+
+	(coccion Plancha)
+	(estacion Primavera Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class60033])
+	(ingredientes_secundarios [ontologia_Class60034])
+	(nombre "Brocheta de ternera y champinyones")
+	(nutrientes [ontologia_Class40004])
+	(tipo_plato Principal))
+
+([ontologia_Class60033] of  IngredientePlato
+
+	(cantidad 3.0)
+	(ingrediente [ontologia_Class10002]))
+
+([ontologia_Class60034] of  IngredientePlato
+
+	(cantidad 8.0)
+	(ingrediente [ontologia_Class60030]))
+
+([ontologia_Class60035] of  Plato
+
+	(coccion Crudo)
+	(estacion Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class60038])
+	(nombre "Manzana")
+	(nutrientes [ontologia_Class40004])
+	(tipo_plato Postre Desayuno))
+
+([ontologia_Class60036] of  Ingrediente
+
+	(nombre "Manzana")
+	(nutrientes [ontologia_Class60037])
+	(tamano_racion 95.0)
+	(tipo_ingrediente Fruta))
+
+([ontologia_Class60037] of  Nutrientes
+
+	(azucar 19.0)
+	(calcio 0.8)
+	(colesterol 0.0)
+	(energia 95.0)
+	(grasas 0.3)
+	(grasas_saturadas 0.1)
+	(hidratos_de_carbono 25.0)
+	(hierro 1.2)
+	(potasio 195.0)
+	(proteinas 0.5)
+	(sodio 1.8)
+	(vitamina_a 2.0)
+	(vitamina_c 14.0))
+
+([ontologia_Class60038] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class60036]))
+
+([ontologia_Class60040] of  IngredientePlato
+)
+
+([ontologia_Class60041] of  Ingrediente
+
+	(nombre "Queso para untar")
+	(nombre_racion "cucharada")
+	(nutrientes [ontologia_Class60042])
+	(tamano_racion 14.0)
+	(tipo_ingrediente Lacteo))
+
+([ontologia_Class60042] of  Nutrientes
+
+	(azucar 0.5)
+	(calcio 0.8)
+	(colesterol 13.0)
+	(energia 42.0)
+	(grasas 4.0)
+	(grasas_saturadas 2.5)
+	(hidratos_de_carbono 0.5)
+	(hierro 0.9)
+	(potasio 16.0)
+	(proteinas 1.0)
+	(sodio 62.0)
+	(vitamina_a 2.9)
+	(vitamina_c 0.0))
+
+([ontologia_Class60043] of  Plato
+
+	(coccion Otros)
+	(estacion Primavera Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class60044])
+	(ingredientes_secundarios [ontologia_Class60045])
+	(nombre "Tostadas con queso")
+	(nutrientes [ontologia_Class40004])
+	(tipo_plato Desayuno))
+
+([ontologia_Class60044] of  IngredientePlato
+
+	(cantidad 2.0)
+	(ingrediente [ontologia_Class21]))
+
+([ontologia_Class60045] of  IngredientePlato
+
+	(cantidad 3.0)
+	(ingrediente [ontologia_Class60041]))
+
+([ontologia_Class60047] of  Ingrediente
+
+	(nombre "Jamon serrano")
+	(nombre_racion "loncha")
+	(nutrientes [ontologia_Class60048])
+	(tamano_racion 20.0)
+	(tipo_ingrediente Carne))
+
+([ontologia_Class60048] of  Nutrientes
+
+	(azucar 0.0)
+	(calcio 0.3)
+	(colesterol 14.0)
+	(energia 48.0)
+	(grasas 2.6)
+	(grasas_saturadas 0.9)
+	(hidratos_de_carbono 0.0)
+	(hierro 11.6)
+	(potasio 32.0)
+	(proteinas 6.2)
+	(sodio 222.0)
+	(vitamina_a 0.0)
+	(vitamina_c 0.0))
+
+([ontologia_Class60049] of  Plato
+
+	(coccion Crudo)
+	(estacion Verano)
+	(ingrediente_principal [ontologia_Class60051])
+	(ingredientes_secundarios [ontologia_Class60050])
+	(nombre "Melon con jamon")
+	(nutrientes [ontologia_Class40004])
+	(tipo_plato Principal))
+
+([ontologia_Class60050] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class50049]))
+
+([ontologia_Class60051] of  IngredientePlato
+
+	(cantidad 4.0)
+	(ingrediente [ontologia_Class60047]))
+
+([ontologia_Class60052] of  Plato
+
+	(coccion Frito)
+	(estacion Primavera Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class60053])
+	(ingredientes_secundarios [ontologia_Class60054])
+	(nombre "Patatas fritas")
+	(nutrientes [ontologia_Class40004])
+	(tipo_plato Acompanamiento))
+
+([ontologia_Class60053] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class24]))
+
+([ontologia_Class60054] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class10020]))
+
+([ontologia_Class60055] of  Plato
+
+	(coccion Plancha)
+	(estacion Primavera Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class60056])
+	(nombre "Ternera a la plancha")
+	(nutrientes [ontologia_Class40004])
+	(tipo_plato Principal))
+
+([ontologia_Class60056] of  IngredientePlato
+
+	(cantidad 3.0)
+	(ingrediente [ontologia_Class10002]))
+
+([ontologia_Class60057] of  Ingrediente
+
+	(nombre "Lentejas cocidas")
+	(nombre_racion "bote")
+	(nutrientes [ontologia_Class60058])
+	(tamano_racion 200.0)
+	(tipo_ingrediente Legumbre))
+
+([ontologia_Class60058] of  Nutrientes
+
+	(azucar 3.6)
+	(calcio 2.9)
+	(colesterol 0.0)
+	(energia 230.0)
+	(grasas 0.8)
+	(grasas_saturadas 0.1)
+	(hidratos_de_carbono 40.0)
+	(hierro 37.0)
+	(potasio 731.0)
+	(proteinas 18.0)
+	(sodio 4.0)
+	(vitamina_a 0.3)
+	(vitamina_c 5.0))
+
+([ontologia_Class60059] of  Plato
+
+	(coccion Hervido)
+	(estacion Primavera Verano)
+	(ingrediente_principal [ontologia_Class60060])
+	(ingredientes_secundarios
+		[ontologia_Class60061]
+		[ontologia_Class60062]
+		[ontologia_Class60063])
+	(nombre "Ensalada de lentejas")
+	(nutrientes [ontologia_Class40004])
+	(tipo_plato Principal))
+
+([ontologia_Class60060] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class60057]))
+
+([ontologia_Class60061] of  IngredientePlato
+
+	(cantidad 0.5)
+	(ingrediente [ontologia_Class10041]))
+
+([ontologia_Class60062] of  IngredientePlato
+
+	(cantidad 0.5)
+	(ingrediente [ontologia_Class20007]))
+
+([ontologia_Class60063] of  IngredientePlato
+
+	(cantidad 0.5)
+	(ingrediente [ontologia_Class10020]))
+
+([ontologia_Class60064] of  Ingrediente
+
+	(nombre "Platano")
+	(nutrientes [ontologia_Class60065])
+	(tipo_ingrediente Fruta))
+
+([ontologia_Class60065] of  Nutrientes
+
+	(azucar 14.0)
+	(calcio 0.5)
+	(colesterol 0.0)
+	(energia 105.0)
+	(grasas 0.4)
+	(grasas_saturadas 0.1)
+	(hidratos_de_carbono 27.0)
+	(hierro 1.7)
+	(potasio 422.0)
+	(proteinas 1.3)
+	(sodio 1.2)
+	(vitamina_a 1.5)
+	(vitamina_c 17.0))
+
+([ontologia_Class60066] of  Ingrediente
+
+	(nombre "Fresa")
+	(nutrientes [ontologia_Class60067])
+	(tamano_racion 18.0)
+	(tipo_ingrediente Fruta))
+
+([ontologia_Class60067] of  Nutrientes
+
+	(azucar 0.9)
+	(calcio 0.2)
+	(colesterol 0.0)
+	(energia 5.8)
+	(grasas 0.1)
+	(grasas_saturadas 0.0)
+	(hidratos_de_carbono 1.4)
+	(hierro 0.4)
+	(potasio 27.6)
+	(proteinas 0.1)
+	(sodio 0.2)
+	(vitamina_a 0.0)
+	(vitamina_c 17.6))
+
+([ontologia_Class60068] of  Plato
+
+	(coccion Crudo)
+	(estacion Primavera Invierno)
+	(ingrediente_principal [ontologia_Class60069])
+	(ingredientes_secundarios [ontologia_Class60070])
+	(nombre "Macedonia de platano y fresas")
+	(nutrientes [ontologia_Class40004])
+	(tipo_plato Postre))
+
+([ontologia_Class60069] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class60064]))
+
+([ontologia_Class60070] of  IngredientePlato
+
+	(cantidad 5.0)
+	(ingrediente [ontologia_Class60066]))
+
+([ontologia_Class60071] of  Plato
+
+	(coccion Crudo)
+	(estacion Primavera Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class60072])
+	(nombre "Platano")
+	(nutrientes [ontologia_Class40004])
+	(tipo_plato Postre))
+
+([ontologia_Class60072] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class60064]))
+
+([ontologia_Class60073] of  Ingrediente
+
+	(nombre "Pollo, conejo, bajoqueta, garrofo, tomate, aceite de oliva, alzafran, pimenton rojo y sal")
+	(nutrientes [ontologia_Class40004])
+	(tamano_racion 100.0)
+	(tipo_ingrediente Carne))
+
+([ontologia_Class60074] of  Plato
+
+	(coccion Otros)
+	(estacion Primavera Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class60075])
+	(ingredientes_secundarios [ontologia_Class60076])
+	(nombre "Paella valenciana")
+	(nutrientes [ontologia_Class40004])
+	(tipo_plato Principal))
+
+([ontologia_Class60075] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class16]))
+
+([ontologia_Class60076] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class60073]))
+
+([ontologia_Class60077] of  Plato
+
+	(coccion Hervido)
+	(estacion Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class60078])
+	(ingredientes_secundarios [ontologia_Class60079])
+	(nombre "Pure de manzana")
+	(nutrientes [ontologia_Class50040])
+	(tipo_plato Acompanamiento))
+
+([ontologia_Class60078] of  IngredientePlato
+
+	(cantidad 2.0)
+	(ingrediente [ontologia_Class60036]))
+
+([ontologia_Class60079] of  IngredientePlato
+
+	(cantidad 2.0)
+	(ingrediente [ontologia_Class60019]))
+
+([ontologia_Class60081] of  Ingrediente
+
+	(nombre "Esparrago verde")
+	(nutrientes [ontologia_Class60082])
+	(tamano_racion 15.0)
+	(tipo_ingrediente Verdura))
+
+([ontologia_Class60082] of  Nutrientes
+
+	(azucar 0.2)
+	(calcio 0.3)
+	(colesterol 0.0)
+	(energia 3.4)
+	(grasas 0.0)
+	(grasas_saturadas 0.0)
+	(hidratos_de_carbono 0.6)
+	(hierro 0.8)
+	(potasio 33.6)
+	(proteinas 0.4)
+	(sodio 2.2)
+	(vitamina_a 3.0)
+	(vitamina_c 1.9))
+
+([ontologia_Class60083] of  Plato
+
+	(coccion Frito)
+	(estacion Primavera Invierno)
+	(ingrediente_principal [ontologia_Class60084])
+	(ingredientes_secundarios [ontologia_Class60085])
+	(nombre "Esparragos a la vinagreta")
+	(nutrientes [ontologia_Class50040])
+	(tipo_plato Principal Acompanamiento))
+
+([ontologia_Class60084] of  IngredientePlato
+
+	(cantidad 10.0)
+	(ingrediente [ontologia_Class60081]))
+
+([ontologia_Class60085] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class10020]))
+
+([ontologia_Class60086] of  Ingrediente
+
+	(nombre "Boqueron frito")
+	(nutrientes [ontologia_Class60087])
+	(tamano_racion 28.0)
+	(tipo_ingrediente Pescado))
+
+([ontologia_Class60087] of  Nutrientes
+
+	(azucar 0.0)
+	(calcio 2.0)
+	(colesterol 26.0)
+	(energia 69.0)
+	(grasas 3.8)
+	(grasas_saturadas 0.7)
+	(hidratos_de_carbono 4.4)
+	(hierro 4.7)
+	(potasio 70.0)
+	(proteinas 4.2)
+	(sodio 75.0)
+	(vitamina_a 0.6)
+	(vitamina_c 0.0))
+
+([ontologia_Class60088] of  Plato
+
+	(coccion Frito)
+	(estacion Primavera Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class60089])
+	(nombre "Pescaito frito")
+	(nutrientes [ontologia_Class50040])
+	(tipo_plato Principal))
+
+([ontologia_Class60089] of  IngredientePlato
+
+	(cantidad 5.0)
+	(ingrediente [ontologia_Class60086]))
+
+([ontologia_Class60091] of  Plato
+
+	(coccion Crudo)
+	(estacion Primavera Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class60096])
+	(ingredientes_secundarios [ontologia_Class60098])
+	(nombre "Cuajada con miel")
+	(nutrientes [ontologia_Class50040])
+	(tipo_plato Desayuno Postre))
+
+([ontologia_Class60092] of  Ingrediente
+
+	(nombre "Cuajada")
+	(nutrientes [ontologia_Class60093])
+	(tamano_racion 125.0)
+	(tipo_ingrediente Lacteo))
+
+([ontologia_Class60093] of  Nutrientes
+
+	(azucar 4.2)
+	(calcio 22.4)
+	(colesterol 0.83)
+	(energia 118.0)
+	(grasas 6.6)
+	(grasas_saturadas 4.1)
+	(hidratos_de_carbono 8.4)
+	(hierro 0.0)
+	(potasio 271.0)
+	(proteinas 6.0)
+	(sodio 78.8)
+	(vitamina_a 6.2)
+	(vitamina_c 0.0))
+
+([ontologia_Class60094] of  Ingrediente
+
+	(nombre "Miel")
+	(nombre_racion "cucharada")
+	(nutrientes [ontologia_Class60095])
+	(tamano_racion 21.0)
+	(tipo_ingrediente Lacteo))
+
+([ontologia_Class60095] of  Nutrientes
+
+	(azucar 17.0)
+	(calcio 0.1)
+	(colesterol 0.0)
+	(energia 64.0)
+	(grasas 0.0)
+	(grasas_saturadas 0.0)
+	(hidratos_de_carbono 17.0)
+	(hierro 0.5)
+	(potasio 11.0)
+	(proteinas 0.1)
+	(sodio 0.8)
+	(vitamina_a 0.0)
+	(vitamina_c 0.2))
+
+([ontologia_Class60096] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class60092]))
+
+([ontologia_Class60098] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class60094]))
+
+([ontologia_Class60099] of  Ingrediente
+
+	(nombre "Chocolate caliente")
+	(nombre_racion "taza")
+	(nutrientes [ontologia_Class50040])
+	(tamano_racion 150.0)
+	(tipo_ingrediente Lacteo))
+
+([ontologia_Class60100] of  Plato
+
+	(coccion Hervido)
+	(estacion Invierno)
+	(ingrediente_principal [ontologia_Class60101])
+	(nombre "Chocolate a la taza")
+	(nutrientes [ontologia_Class50040])
+	(tipo_plato Desayuno))
+
+([ontologia_Class60101] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class60099]))
+
+([ontologia_Class60102] of  Ingrediente
+
+	(nombre "Helado")
+	(nombre_racion "bola")
+	(nutrientes [ontologia_Class60104])
+	(tamano_racion 130.0)
+	(tipo_ingrediente Lacteo))
+
+([ontologia_Class60103] of  Nutrientes
+
+	(azucar 0.0)
+	(calcio 0.4)
+	(colesterol 25.0)
+	(energia 67.3)
+	(grasas 4.0)
+	(grasas_saturadas 1.4)
+	(hidratos_de_carbono 0.0)
+	(hierro 1.7)
+	(potasio 96.7)
+	(proteinas 7.3)
+	(sodio 16.0)
+	(vitamina_a 0.0)
+	(vitamina_c 0.0))
+
+([ontologia_Class60104] of  Nutrientes
+
+	(azucar 28.0)
+	(calcio 13.0)
+	(colesterol 58.0)
+	(energia 273.0)
+	(grasas 15.0)
+	(grasas_saturadas 9.0)
+	(hidratos_de_carbono 31.0)
+	(hierro 0.7)
+	(potasio 263.0)
+	(proteinas 4.6)
+	(sodio 106.0)
+	(vitamina_a 11.0)
+	(vitamina_c 1.3))
+
+([ontologia_Class60105] of  Plato
+
+	(coccion Crudo)
+	(estacion Verano)
+	(ingrediente_principal [ontologia_Class60106])
+	(nombre "Helado de vainilla")
+	(nutrientes [ontologia_Class60103])
+	(tipo_plato Postre))
+
+([ontologia_Class60106] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class60102]))
+
+([ontologia_Class60108] of  Plato
+
+	(coccion Hervido)
+	(estacion Primavera Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class60109])
+	(ingredientes_secundarios
+		[ontologia_Class60110]
+		[ontologia_Class60111])
+	(nombre "Pure de patata y zanahoria")
+	(nutrientes [ontologia_Class60103])
+	(tipo_plato Principal Acompanamiento))
+
+([ontologia_Class60109] of  IngredientePlato
+
+	(cantidad 0.75)
+	(ingrediente [ontologia_Class24]))
+
+([ontologia_Class60110] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class20007]))
+
+([ontologia_Class60111] of  IngredientePlato
+
+	(cantidad 0.5)
+	(ingrediente [ontologia_Class10036]))
+
+([ontologia_Class60112] of  Ingrediente
+
+	(nombre "Alcachofa")
+	(nutrientes [ontologia_Class60113])
+	(tamano_racion 120.0)
+	(tipo_ingrediente Verdura))
+
+([ontologia_Class60113] of  Nutrientes
+
+	(azucar 1.2)
+	(calcio 1.9)
+	(colesterol 0.0)
+	(energia 64.0)
+	(grasas 0.4)
+	(grasas_saturadas 0.1)
+	(hidratos_de_carbono 14.0)
+	(hierro 4.1)
+	(potasio 373.0)
+	(proteinas 3.5)
+	(sodio 72.0)
+	(vitamina_a 0.3)
+	(vitamina_c 15.0))
+
+([ontologia_Class60114] of  Plato
+
+	(coccion Frito)
+	(estacion Primavera Invierno)
+	(ingrediente_principal [ontologia_Class60115])
+	(nombre "Alcachofas asadas")
+	(nutrientes [ontologia_Class60103])
+	(tipo_plato Acompanamiento))
+
+([ontologia_Class60115] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class60112]))
+
+([ontologia_Class60116] of  Ingrediente
+
+	(nombre "Carne de cerdo")
+	(nombre_racion "trozo")
+	(nutrientes [ontologia_Class60103])
+	(tamano_racion 28.3)
+	(tipo_ingrediente Carne))
+
+([ontologia_Class60117] of  Plato
+
+	(coccion Plancha)
+	(estacion Primavera Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class60118])
+	(nombre "Solomillo de cerdo")
+	(nutrientes [ontologia_Class60103])
+	(tipo_plato Principal))
+
+([ontologia_Class60118] of  IngredientePlato
+
+	(cantidad 3.0)
+	(ingrediente [ontologia_Class60116]))
+
+([ontologia_Class60120] of  Plato
+
+	(coccion Crudo)
+	(estacion Otono Invierno)
+	(ingrediente_principal [ontologia_Class60123])
+	(nombre "Mandarina")
+	(nutrientes [ontologia_Class60103])
+	(tipo_plato Postre Desayuno))
+
+([ontologia_Class60121] of  Ingrediente
+
+	(nombre "Mandarina")
+	(nutrientes [ontologia_Class60122])
+	(tamano_racion 195.0)
+	(tipo_ingrediente Fruta))
+
+([ontologia_Class60122] of  Nutrientes
+
+	(azucar 21.0)
+	(calcio 5.6)
+	(colesterol 0.0)
+	(energia 103.0)
+	(grasas 0.6)
+	(grasas_saturadas 0.1)
+	(hidratos_de_carbono 26.0)
+	(hierro 1.6)
+	(potasio 324.0)
+	(proteinas 1.6)
+	(sodio 3.9)
+	(vitamina_a 27.0)
+	(vitamina_c 87.0))
+
+([ontologia_Class60123] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class60121]))
+
+([ontologia_Class60124] of  Nutrientes
+
+	(azucar 0.0)
+	(calcio 0.0)
+	(colesterol 0.0)
+	(energia -1.0)
+	(grasas 0.0)
+	(grasas_saturadas 0.0)
+	(hidratos_de_carbono 0.0)
+	(hierro 0.0)
+	(potasio 0.0)
+	(proteinas 0.0)
+	(sodio 0.0)
+	(vitamina_a 0.0)
+	(vitamina_c 0.0))
+
+([ontologia_Class60125] of  Ingrediente
+
+	(nombre "Caldo de pescado")
+	(nombre_racion "vaso")
+	(nutrientes [ontologia_Class60126])
+	(tamano_racion 250.0)
+	(tipo_ingrediente Pescado))
+
+([ontologia_Class60126] of  Nutrientes
+
+	(azucar 0.2)
+	(calcio 5.6)
+	(colesterol 0.0)
+	(energia 39.0)
+	(grasas 1.5)
+	(grasas_saturadas 0.3)
+	(hidratos_de_carbono 1.0)
+	(hierro 2.8)
+	(potasio 210.0)
+	(proteinas 4.9)
+	(sodio 773.0)
+	(vitamina_a 0.2)
+	(vitamina_c 0.0))
+
+([ontologia_Class60127] of  Ingrediente
+
+	(nombre "Bacalao")
+	(nombre_racion "filete")
+	(nutrientes [ontologia_Class60128])
+	(tamano_racion 180.0)
+	(tipo_ingrediente Pescado))
+
+([ontologia_Class60128] of  Nutrientes
+
+	(azucar 0.0)
+	(calcio 1.9)
+	(colesterol 99.0)
+	(energia 189.0)
+	(grasas 1.5)
+	(grasas_saturadas 0.3)
+	(hidratos_de_carbono 0.0)
+	(hierro 4.9)
+	(potasio 439.0)
+	(proteinas 41.0)
+	(sodio 140.0)
+	(vitamina_a 1.7)
+	(vitamina_c 3.0))
+
+([ontologia_Class60129] of  Plato
+
+	(coccion Hervido)
+	(estacion Primavera Otono Invierno)
+	(ingrediente_principal [ontologia_Class60130])
+	(ingredientes_secundarios
+		[ontologia_Class60131]
+		[ontologia_Class60132])
+	(nombre "Sopa de pescado con fideos")
+	(nutrientes [ontologia_Class60124])
+	(tipo_plato Principal))
+
+([ontologia_Class60130] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class60125]))
+
+([ontologia_Class60131] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class60127]))
+
+([ontologia_Class60132] of  IngredientePlato
+
+	(cantidad 0.5)
+	(ingrediente [ontologia_Class50026]))
+
+([ontologia_Class60133] of  Ingrediente
+
+	(nombre "Pera")
+	(nutrientes [ontologia_Class60134])
+	(tamano_racion 178.0)
+	(tipo_ingrediente Fruta))
+
+([ontologia_Class60134] of  Nutrientes
+
+	(azucar 17.0)
+	(calcio 1.2)
+	(colesterol 0.0)
+	(energia 101.0)
+	(grasas 0.3)
+	(grasas_saturadas 0.0)
+	(hidratos_de_carbono 27.0)
+	(hierro 1.8)
+	(potasio 206.0)
+	(proteinas 0.6)
+	(sodio 1.8)
+	(vitamina_a 0.9)
+	(vitamina_c 13.0))
+
+([ontologia_Class60135] of  Plato
+
+	(coccion Crudo)
+	(estacion Verano Otono)
+	(ingrediente_principal [ontologia_Class60136])
+	(nombre "Pera")
+	(nutrientes [ontologia_Class60124])
+	(tipo_plato Postre))
+
+([ontologia_Class60136] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class60133]))
+
+([ontologia_Class60137] of  Plato
+
+	(coccion Hervido)
+	(estacion Otono Invierno)
+	(ingrediente_principal [ontologia_Class60138])
+	(ingredientes_secundarios
+		[ontologia_Class60139]
+		[ontologia_Class60140]
+		[ontologia_Class60141])
+	(nombre "Lentejas estofadas con verduras")
+	(nutrientes [ontologia_Class60124])
+	(tipo_plato Principal))
+
+([ontologia_Class60138] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class60057]))
+
+([ontologia_Class60139] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class20007]))
+
+([ontologia_Class60140] of  IngredientePlato
+
+	(cantidad 0.5)
+	(ingrediente [ontologia_Class24]))
+
+([ontologia_Class60141] of  IngredientePlato
+
+	(cantidad 0.5)
+	(ingrediente [ontologia_Class10041]))
+
+([ontologia_Class60142] of  Plato
+
+	(coccion Crudo)
+	(estacion Primavera Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class60143])
+	(ingredientes_secundarios [ontologia_Class60144])
+	(nombre "Bocadillo de jamon")
+	(nutrientes [ontologia_Class60124])
+	(tipo_plato Desayuno))
+
+([ontologia_Class60143] of  IngredientePlato
+
+	(cantidad 0.4)
+	(ingrediente [ontologia_Class50053]))
+
+([ontologia_Class60144] of  IngredientePlato
+
+	(cantidad 3.0)
+	(ingrediente [ontologia_Class60047]))
+
+([ontologia_Class60145] of  Ingrediente
+
+	(nombre "Aceituna")
+	(nutrientes [ontologia_Class60146])
+	(tamano_racion 3.8)
+	(tipo_ingrediente Verdura))
+
+([ontologia_Class60146] of  Nutrientes
+
+	(azucar 0.0)
+	(calcio 0.3)
+	(colesterol 0.0)
+	(energia 4.4)
+	(grasas 0.4)
+	(grasas_saturadas 0.1)
+	(hidratos_de_carbono 0.2)
+	(hierro 0.7)
+	(potasio 0.3)
+	(proteinas 0.0)
+	(sodio 28.0)
+	(vitamina_a 0.3)
+	(vitamina_c 0.1))
+
+([ontologia_Class60147] of  Plato
+
+	(coccion Crudo)
+	(estacion Primavera Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class60148])
+	(ingredientes_secundarios
+		[ontologia_Class60149]
+		[ontologia_Class60150]
+		[ontologia_Class60151]
+		[ontologia_Class60152]
+		[ontologia_Class60153])
+	(nombre "Ensalada valenciana")
+	(nutrientes [ontologia_Class60124])
+	(tipo_plato Acompanamiento Principal))
+
+([ontologia_Class60148] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class10056]))
+
+([ontologia_Class60149] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class10023]))
+
+([ontologia_Class60150] of  IngredientePlato
+
+	(cantidad 0.5)
+	(ingrediente [ontologia_Class10041]))
+
+([ontologia_Class60151] of  IngredientePlato
+
+	(cantidad 12.0)
+	(ingrediente [ontologia_Class60145]))
+
+([ontologia_Class60152] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class10020]))
+
+([ontologia_Class60153] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class27]))
+
+([ontologia_Class60155] of  Ingrediente
+
+	(nombre "Galleta maria")
+	(nutrientes [ontologia_Class60156])
+	(tamano_racion 6.0)
+	(tipo_ingrediente Cereal))
+
+([ontologia_Class60156] of  Nutrientes
+
+	(azucar 3.0)
+	(calcio 0.5)
+	(colesterol 3.95)
+	(energia 28.9)
+	(grasas 1.1)
+	(grasas_saturadas 0.6)
+	(hidratos_de_carbono 4.14)
+	(hierro 0.5)
+	(potasio 6.6)
+	(proteinas 0.4)
+	(sodio 13.0)
+	(vitamina_a 0.0)
+	(vitamina_c 0.0))
+
+([ontologia_Class60157] of  Plato
+
+	(coccion Crudo)
+	(estacion Primavera Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class60158])
+	(nombre "Galletas maria")
+	(nutrientes [ontologia_Class60124])
+	(tipo_plato Desayuno))
+
+([ontologia_Class60158] of  IngredientePlato
+
+	(cantidad 4.0)
+	(ingrediente [ontologia_Class60155]))
+
+([ontologia_Class70005] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class10041]))
+
+([ontologia_Class70006] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class24]))
+
+([ontologia_Class70007] of  Ingrediente
+
+	(nombre "Croqueta de jamon")
+	(nutrientes [ontologia_Class70008])
+	(tamano_racion 62.0)
+	(tipo_ingrediente Carne))
+
+([ontologia_Class70008] of  Nutrientes
+
+	(azucar 1.2)
+	(calcio 7.0)
+	(colesterol 51.0)
+	(energia 154.0)
+	(grasas 7.4)
+	(grasas_saturadas 2.6)
+	(hidratos_de_carbono 13.0)
+	(hierro 5.7)
+	(potasio 95.0)
+	(proteinas 8.8)
+	(sodio 416.0)
+	(vitamina_a 3.8)
+	(vitamina_c 1.3))
+
+([ontologia_Class70009] of  Plato
+
+	(coccion Frito)
+	(estacion Primavera Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class70010])
+	(nombre "Croquetas de jamon")
+	(nutrientes [ontologia_Class60124])
+	(tipo_plato Principal))
+
+([ontologia_Class70010] of  IngredientePlato
+
+	(cantidad 2.0)
+	(ingrediente [ontologia_Class70007]))
+
+([ontologia_Class70011] of  Plato
+
+	(coccion Crudo)
+	(estacion Primavera Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class70012])
+	(ingredientes_secundarios
+		[ontologia_Class70013]
+		[ontologia_Class70014]
+		[ontologia_Class70015]
+		[ontologia_Class70016]
+		[ontologia_Class70017])
+	(nombre "Sandwich vegetal")
+	(nutrientes [ontologia_Class60124])
+	(tipo_plato Desayuno))
+
+([ontologia_Class70012] of  IngredientePlato
+
+	(cantidad 2.0)
+	(ingrediente [ontologia_Class21]))
+
+([ontologia_Class70013] of  IngredientePlato
+
+	(cantidad 0.5)
+	(ingrediente [ontologia_Class25]))
+
+([ontologia_Class70014] of  IngredientePlato
+
+	(cantidad 0.5)
+	(ingrediente [ontologia_Class10023]))
+
+([ontologia_Class70015] of  IngredientePlato
+
+	(cantidad 0.5)
+	(ingrediente [ontologia_Class27]))
+
+([ontologia_Class70016] of  IngredientePlato
+
+	(cantidad 0.5)
+	(ingrediente [ontologia_Class10056]))
+
+([ontologia_Class70017] of  IngredientePlato
+
+	(cantidad 2.0)
+	(ingrediente [ontologia_Class20023]))
+
+([ontologia_Class70018] of  Ingrediente
+
+	(nombre "Espinacas")
+	(nombre_racion "manojo")
+	(nutrientes [ontologia_Class70019])
+	(tamano_racion 180.0)
+	(tipo_ingrediente Verdura))
+
+([ontologia_Class70019] of  Nutrientes
+
+	(azucar 0.8)
+	(calcio 19.0)
+	(colesterol 0.0)
+	(energia 41.0)
+	(grasas 0.5)
+	(grasas_saturadas 0.1)
+	(hidratos_de_carbono 6.8)
+	(hierro 36.0)
+	(potasio 839.0)
+	(proteinas 5.3)
+	(sodio 126.0)
+	(vitamina_a 377.0)
+	(vitamina_c 29.0))
+
+([ontologia_Class70020] of  Plato
+
+	(coccion Hervido)
+	(estacion Otono Invierno)
+	(ingrediente_principal [ontologia_Class70022])
+	(ingredientes_secundarios
+		[ontologia_Class70023]
+		[ontologia_Class70024]
+		[ontologia_Class70025])
+	(nombre "Potaje de garbanzos y espinacas")
+	(nutrientes [ontologia_Class60124])
+	(tipo_plato Principal))
+
+([ontologia_Class70021] of  IngredientePlato
+)
+
+([ontologia_Class70022] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class50003]))
+
+([ontologia_Class70023] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class10041]))
+
+([ontologia_Class70024] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class10023]))
+
+([ontologia_Class70025] of  IngredientePlato
+
+	(cantidad 0.5)
+	(ingrediente [ontologia_Class70018]))
+
+([ontologia_Class70026] of  Plato
+
+	(coccion Plancha)
+	(estacion Primavera Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class70027])
+	(ingredientes_secundarios
+		[ontologia_Class70028]
+		[ontologia_Class70031])
+	(nombre "Bikini")
+	(nutrientes [ontologia_Class60124])
+	(tipo_plato Desayuno))
+
+([ontologia_Class70027] of  IngredientePlato
+
+	(cantidad 2.0)
+	(ingrediente [ontologia_Class21]))
+
+([ontologia_Class70028] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class50057]))
+
+([ontologia_Class70029] of  Ingrediente
+
+	(nombre "Jamon dulce")
+	(nombre_racion "loncha")
+	(nutrientes [ontologia_Class70030])
+	(tamano_racion 42.0)
+	(tipo_ingrediente Carne))
+
+([ontologia_Class70030] of  Nutrientes
+
+	(azucar 0.5)
+	(calcio 0.1)
+	(colesterol 27.0)
+	(energia 58.0)
+	(grasas 2.1)
+	(grasas_saturadas 0.4)
+	(hidratos_de_carbono 0.5)
+	(hierro 1.9)
+	(potasio 145.0)
+	(proteinas 9.3)
+	(sodio 410.0)
+	(vitamina_a 0.4)
+	(vitamina_c 0.0))
+
+([ontologia_Class70031] of  IngredientePlato
+
+	(cantidad 2.0)
+	(ingrediente [ontologia_Class70029]))
+
+([ontologia_Class70032] of  Plato
+
+	(coccion Frito)
+	(estacion Primavera Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class70033])
+	(ingredientes_secundarios [ontologia_Class70034])
+	(nombre "Tortilla de champinyones")
+	(nutrientes [ontologia_Class60124])
+	(tipo_plato Principal))
+
+([ontologia_Class70033] of  IngredientePlato
+
+	(cantidad 2.0)
+	(ingrediente [ontologia_Class20033]))
+
+([ontologia_Class70034] of  IngredientePlato
+
+	(cantidad 8.0)
+	(ingrediente [ontologia_Class60030]))
+
+([ontologia_Class70035] of  Plato
+
+	(coccion Frito)
+	(estacion Primavera Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class70036])
+	(ingredientes_secundarios [ontologia_Class70037])
+	(nombre "Huevo frito")
+	(nutrientes [ontologia_Class60124])
+	(tipo_plato Acompanamiento))
+
+([ontologia_Class70036] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class20033]))
+
+([ontologia_Class70037] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class10020]))
+
+([ontologia_Class70039] of  Ingrediente
+
+	(nombre "Leche de soja")
+	(nombre_racion "vaso")
+	(nutrientes [ontologia_Class70040])
+	(tamano_racion 250.0)
+	(tipo_ingrediente Otro))
+
+([ontologia_Class70040] of  Nutrientes
+
+	(azucar 6.0)
+	(calcio 23.0)
+	(colesterol 0.0)
+	(energia 100.0)
+	(grasas 4.0)
+	(grasas_saturadas 0.5)
+	(hidratos_de_carbono 8.0)
+	(hierro 5.9)
+	(potasio 299.0)
+	(proteinas 7.0)
+	(sodio 119.0)
+	(vitamina_a 10.0)
+	(vitamina_c 0.0))
+
+([ontologia_Class70041] of  Plato
+
+	(coccion Crudo)
+	(estacion Primavera Verano Otono Invierno)
+	(ingrediente_principal [ontologia_Class70042])
+	(ingredientes_secundarios [ontologia_Class70044])
+	(nombre "Leche de soja con cacao")
+	(nutrientes [ontologia_Class60124])
+	(tipo_plato Desayuno))
+
+([ontologia_Class70042] of  IngredientePlato
+
+	(cantidad 1.0)
+	(ingrediente [ontologia_Class70039]))
+
+([ontologia_Class70044] of  IngredientePlato
+
+	(cantidad 2.0)
+	(ingrediente [ontologia_Class20]))

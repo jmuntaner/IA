@@ -1,0 +1,520 @@
+; Tue May 21 01:10:55 CEST 2019
+; 
+;+ (version "3.5")
+;+ (build "Build 663")
+
+
+(defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
+	(is-a USER)
+	(role abstract)
+	(multislot estacion_plato
+		(type INSTANCE)
+;+		(allowed-classes)
+		(cardinality 1 4)
+;+		(inverse-slot platos_estacion)
+		(create-accessor read-write))
+	(single-slot azucar
+		(type FLOAT)
+		(default 0.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot ontologia_Class30007
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot desayuno
+		(type INSTANCE)
+;+		(allowed-classes Comida)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot platos
+		(type INSTANCE)
+;+		(allowed-classes Plato)
+		(cardinality 0 4)
+		(create-accessor read-write))
+	(single-slot nombre_persona
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot ontologia_Class30000
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot tipo_plato
+		(type SYMBOL)
+		(allowed-values Acompanamiento Postre Desayuno Principal)
+		(cardinality 1 2)
+		(create-accessor read-write))
+	(single-slot tipo_comida
+		(type SYMBOL)
+		(allowed-values Desayuno Principal)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot ingrediente
+		(type INSTANCE)
+;+		(allowed-classes Ingrediente)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot ontologia_Class30003
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot proteinas
+;+		(comment "g")
+		(type FLOAT)
+		(default 0.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot vegetariano
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot ingrediente_principal
+		(type INSTANCE)
+;+		(allowed-classes IngredientePlato)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot ingredientes_secundarios
+		(type INSTANCE)
+;+		(allowed-classes IngredientePlato)
+		(create-accessor read-write))
+	(single-slot peso
+		(type FLOAT)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot vitamina_b12
+;+		(comment "ug")
+		(type FLOAT)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot nombre_racion
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot ontologia_Class9
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot platos_estacion
+		(type INSTANCE)
+;+		(allowed-classes Plato)
+;+		(inverse-slot estacion_plato)
+		(create-accessor read-write))
+	(single-slot comidas
+		(type INSTANCE)
+;+		(allowed-classes)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot potasio
+;+		(comment "mg")
+		(type FLOAT)
+		(default 0.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot grado_ejercicio
+		(type SYMBOL)
+		(allowed-values Alto Bajo Medio)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot puntuacion
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot hidratos_de_carbono
+;+		(comment "g")
+		(type FLOAT)
+		(default 0.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot ontologia_Class6
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot sexo
+		(type SYMBOL)
+		(allowed-values Varon Mujer)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot colesterol
+;+		(comment "mg")
+		(type FLOAT)
+		(default 0.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot menus
+		(type INSTANCE)
+;+		(allowed-classes)
+		(cardinality 7 7)
+		(create-accessor read-write))
+	(single-slot ontologia_Class40009
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot vitamina_b6
+;+		(comment "mg")
+		(type FLOAT)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot estacion
+		(type SYMBOL)
+		(allowed-values Verano Primavera Otono Invierno)
+		(default Primavera Verano Otono Invierno)
+		(cardinality 1 4)
+		(create-accessor read-write))
+	(single-slot tamano_racion
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot nombre_condicion
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot pla
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot nombre_estacion
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot dias
+		(type INSTANCE)
+;+		(allowed-classes Menu)
+		(cardinality 7 7)
+		(create-accessor read-write))
+	(single-slot grado_recomendacion
+		(type INTEGER)
+		(range 0 100)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot estatura
+		(type FLOAT)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot tipo_ingrediente
+		(type SYMBOL)
+		(allowed-values Fruta Carne Pescado Legumbre Cereal Verdura Lacteo Otro Huevos)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot hierro
+;+		(comment "%")
+		(type FLOAT)
+		(default 0.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot vitamina_a
+;+		(comment "%")
+		(type FLOAT)
+		(default 0.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot vitamina_c
+;+		(comment "%")
+		(type FLOAT)
+		(default 0.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot coccion
+		(type SYMBOL)
+		(allowed-values Horneado Hervido Plancha Otros Crudo Frito)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot vitamina_e
+;+		(comment "mg")
+		(type FLOAT)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot comida
+		(type INSTANCE)
+;+		(allowed-classes Plato)
+		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(single-slot vitamina_d
+;+		(comment "ug")
+		(type FLOAT)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot grasas_saturadas
+;+		(comment "g")
+		(type FLOAT)
+		(default 0.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot nombre
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot condiciones
+		(type INSTANCE)
+;+		(allowed-classes)
+		(create-accessor read-write))
+	(single-slot almuerzo
+		(type INSTANCE)
+;+		(allowed-classes Comida)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot grasas
+;+		(comment "g")
+		(type FLOAT)
+		(default 0.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot calcio
+;+		(comment "%")
+		(type FLOAT)
+		(default 0.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot cena
+		(type INSTANCE)
+;+		(allowed-classes Comida)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot nutrientes
+		(type INSTANCE)
+;+		(allowed-classes Nutrientes)
+		(default [ontologia_Class60124])
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot edad
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot sodio
+;+		(comment "mg")
+		(type FLOAT)
+		(default 0.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot energia
+;+		(comment "kcal")
+		(type FLOAT)
+		(default 0.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot cantidad
+		(type FLOAT)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Plato
+	(is-a USER)
+	(role concrete)
+	(single-slot coccion
+		(type SYMBOL)
+		(allowed-values Horneado Hervido Plancha Otros Crudo Frito)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot ingrediente_principal
+		(type INSTANCE)
+;+		(allowed-classes IngredientePlato)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot ingredientes_secundarios
+		(type INSTANCE)
+;+		(allowed-classes IngredientePlato)
+		(create-accessor read-write))
+	(single-slot nombre
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot nutrientes
+		(type INSTANCE)
+;+		(allowed-classes Nutrientes)
+		(default [ontologia_Class60124])
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot tipo_plato
+		(type SYMBOL)
+		(allowed-values Acompanamiento Postre Desayuno Principal)
+		(cardinality 1 2)
+		(create-accessor read-write))
+	(single-slot puntuacion
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot estacion
+		(type SYMBOL)
+		(allowed-values Verano Primavera Otono Invierno)
+		(default Primavera Verano Otono Invierno)
+		(cardinality 1 4)
+		(create-accessor read-write)))
+
+(defclass Ingrediente
+	(is-a USER)
+	(role concrete)
+	(single-slot nombre
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot nutrientes
+		(type INSTANCE)
+;+		(allowed-classes Nutrientes)
+		(default [ontologia_Class60124])
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot tipo_ingrediente
+		(type SYMBOL)
+		(allowed-values Fruta Carne Pescado Legumbre Cereal Verdura Lacteo Otro Huevos)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot tamano_racion
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot nombre_racion
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass IngredientePlato
+	(is-a USER)
+	(role concrete)
+	(single-slot ingrediente
+		(type INSTANCE)
+;+		(allowed-classes Ingrediente)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot cantidad
+		(type FLOAT)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass MenuDiario
+	(is-a USER)
+	(role concrete)
+	(single-slot desayuno
+		(type INSTANCE)
+;+		(allowed-classes Comida)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot cena
+		(type INSTANCE)
+;+		(allowed-classes Comida)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot nutrientes
+		(type INSTANCE)
+;+		(allowed-classes Nutrientes)
+		(default [ontologia_Class60124])
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot almuerzo
+		(type INSTANCE)
+;+		(allowed-classes Comida)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Nutrientes
+	(is-a USER)
+	(role concrete)
+	(single-slot hierro
+;+		(comment "%")
+		(type FLOAT)
+		(default 0.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot azucar
+		(type FLOAT)
+		(default 0.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot vitamina_a
+;+		(comment "%")
+		(type FLOAT)
+		(default 0.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot vitamina_c
+;+		(comment "%")
+		(type FLOAT)
+		(default 0.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot grasas_saturadas
+;+		(comment "g")
+		(type FLOAT)
+		(default 0.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot potasio
+;+		(comment "mg")
+		(type FLOAT)
+		(default 0.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot grasas
+;+		(comment "g")
+		(type FLOAT)
+		(default 0.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot hidratos_de_carbono
+;+		(comment "g")
+		(type FLOAT)
+		(default 0.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot proteinas
+;+		(comment "g")
+		(type FLOAT)
+		(default 0.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot calcio
+;+		(comment "%")
+		(type FLOAT)
+		(default 0.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot colesterol
+;+		(comment "mg")
+		(type FLOAT)
+		(default 0.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot sodio
+;+		(comment "mg")
+		(type FLOAT)
+		(default 0.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot energia
+;+		(comment "kcal")
+		(type FLOAT)
+		(default 0.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Menu
+	(is-a USER)
+	(role concrete)
+	(multislot dias
+		(type INSTANCE)
+;+		(allowed-classes Menu)
+		(cardinality 7 7)
+		(create-accessor read-write)))
+
+(defclass Comida
+	(is-a USER)
+	(role concrete)
+	(multislot platos
+		(type INSTANCE)
+;+		(allowed-classes Plato)
+		(cardinality 0 4)
+		(create-accessor read-write))
+	(single-slot nutrientes
+		(type INSTANCE)
+;+		(allowed-classes Nutrientes)
+		(default [ontologia_Class60124])
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass ComidaPrincipal
+	(is-a Comida)
+	(role concrete))
+
+(defclass Desayuno
+	(is-a Comida)
+	(role concrete))

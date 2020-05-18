@@ -1,0 +1,217 @@
+%https://www.overleaf.com/3112595998zynqvqjmjfwt
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, mathtools}
+\usepackage{listings}
+\usepackage{multirow}
+\usepackage[table,xcdraw]{xcolor}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{1em}
+
+
+\title{Práctica de  SBC}
+\author{Ernesto Lanchares & Ferran López & Joan Muntaner & Niebo Zhang}
+\date{Mayo de 2019}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section{Introducción}
+
+El objetivo de esta práctica es resolver el problema del cuatrimestre de primavera 2018 - 2019 mediante las técnicas de SBC (Sistemas Basados en el Conocimiento). Debido que hay problemas que no se pueden resolver algorítimicamente, existen lo que conocemos como sistemas basados en el conocimiento, que consta de un conocimiento específico de los elementos del dominio y a partir de estos toma las decisiones más correctas, ya sea empleando una clasificación  heurística o constructiva. Es decir el sistema,  en cierto modo, emula el trabajo de un experto, tanto los conocimientos de estos como el planteamiento y resolución del problema.
+
+Nuestro problema consiste en generar un menú semanal para gente mayor, el sistema recopilará toda la información necesaria, por ejemplo restricciones o preferencia respecto a ingredientes o enfermedades que tiene, y con estas elaborará el menú más preferible para el consumidor intentando que el contenido de nutrientes sea el adecuado para el sujeto, partiendo de una base suficientemente amplia y respresentativa de platos e ingredientes. 
+
+Estos sistemas no solo disponen de conocimiento factual (objetos del dominio), también contienen conocimiento relacional (relaciones entre los objetos del dominio) y conocimiento condicional (reglas de producción que expresan conocimiento deductivo sobre el dominio). Por ende, hemos construído una ontología usando \textbf{Protégé} con la informació de los platos e ingredientes y un sistema de reglas con \textbf{CLIPS} para describir el proceso de toma de decisiones.
+
+Para la realización exitosa de la práctica y construir el SBC se ha seguido el modelo en cascada, una metadología recomendada para proyectos de tamaño relativamente medianos o pequeños como por ejemplo el nuestro, está basado en los siguientes apartados:
+
+\begin{itemize}
+    \item Identificación del problema
+    \item Conceptualización
+    \item Formalización
+    \item Implementación
+    \item Prueba
+\end{itemize}
+
+A continuación se explicará, para cada fase, detalladamente su aplicación para el desarollo específico de nuestro sistema.
+
+\newpage
+\section{Identificación del problema}
+
+Antes de abordar el problema, tenemos que realizar una primera aproximación de su descripción y comprobar si realmente es factible resolver el problema con las técnicas de SBC. Además, en esta práctica estamos simulando el rol del experto, debemos también comprobar la disponibilidad de las fuentes de conocimientos necesarias y el nivel de complejidad demandada para resolver nuestro problema. Esto es lo que analizaremos en esta fase.
+
+\subsection{Descripción}
+
+La conscienciación de la población sobre la buena alimentación debido al envejecimiento progresivo de la población para llevar un estado de salud general óptimo ha provocado la necesidad de escoger detalladamente que consumir para cada comida, sobretodo a la gente más mayor. Para facilitarles la tarea, queremos desarollar un sistema que permita la generación automática de un menú semanal en función de las condiciones físicas del usuario, asimismo, sus preferencias.
+
+El sistema recopilará información personalizada proporcionada por nuestros usuarios, como su condición física (edad, sexo, estatura, peso...), preferencias, enfermedades, etc. Después de obtener dicha información, nuestro sistema aplicará un reconociemiento para escoger los platos más adecuados para elaborar los menús diarios, compuestos por un desayuno (plato único), comida y cena (un principal, un acompañamiento y un postre), y, posteriormente, generar el menú semanal completo. De cada plato se tiene su ingrediente principal, sus ingredientes secundarios, el tipo de cocción, la disponibilidad de este por estacions y qué tipo de plato es entre otros datos. 
+
+Las características del usuario en base a las cuales se realiza la recomendación pertenecen a las siguientes categorías:
+
+\begin{itemize}
+    \item \textbf{Datos físicos del usuario:} Estos datos permiten calcular las necesidades mínimas y máximas recomendadas del usuario. Además las enfermedades del usuario nos permitirá construir un menú personalizado más adecuado para su situación.
+    \item \textbf{Preferencias del usuario:} Recogen que tipo de ingrediente es de más interés para el usuario. Este tipo de información nos permiten generar un menú más personalizado, es decir, con más probabilidad de gustarle.
+\end{itemize}
+
+Con todo lo anterior definido es posible asociar a cada uno de nuestros menús un grado de afinidad con el usuario para la recomendación y, por lo tanto, recomendar un menú semanal correcto y adiente. A parte de lo mencionado antes, otra parte del problema es ajustar correctament los menús para evitar que sean demasiado repetitivos porque puede afectar negativament al usuario, por lo tanto habrá que garantizar que el conjuto de platos sea suficientemente variado, pero sin perjudicar los contenidos de gusto del usuario.
+
+\subsection{Viabilidad}
+
+En este sección se justifica la viabilidad de desarrollar un SBC para dar solución a este problema, en vez de usar otros métodos.
+
+Inicialment podriamos enfocarlo como un problema de búsqueda, debido a que consiste en recórrer el espacio de platos y ingredientes y construir un conjunto con estas respetando las restricciones y preferencias del usuario, sin embargo el espacio de exploració es demasiado amplio para resolver el problema con los métodos de resolución conocidos y el conjunto de solución podrían ser muy grande también.
+
+Sabemos de los elementos de la solució y disponemos de una fuente de informació amplia y fiable sobre ellos. Esto es imprenscindible para poder aplicar las técnicas de SBC , ya que se necesitana lo que conocemos como conocimiento experto.
+
+Aparte tenemos conocimiento de cómo debe ser la solución para que se ajuste al usuario, porque tenemos sus preferencias y datos. Asimismo nos permite proporcionarr un método de justificación del menú semanal obtenido.
+
+Dichas condiciones nos permite llegar a la conclusión que podemos resolver de manera eficaz este problema a través de la construcción de un SBC que implemente reglas que relacionen los platos con las necesidades del usuario como lo haría un dietista profesional, obteniendo una solución válida. 
+
+\subsection{Fuente de conocimimento}
+
+La base de una SBC es la información disponible, con la cual "aprenderá" a cómo tomar decisiones, por lo tanto es un punto muy importante. En nuestro caso el conocimiento necesario para encontrar una solución proviene de distintas fuentes:
+
+\begin{itemize}
+    \item \textbf{Información de los platos:} nuestro SBC dispone una amplia gama de datos sobre platos para poder generar un gran cantidad de menús diferentes y, consecuentemente, abastecer todo tipo de necesidad requerido por el usuario. Para poder obtener los datos necesarios sobre los platos, hemos listado los ingredientes por categoría, es decir: verduras, frutas, carne... Para tener una gran variedad de cada tipo y, consecuentmente, tipos de plato. Para los ingredientes hemos consultado Nutritionix para encontrar los valores nutricionales de estos.
+    Además hemos recogido extensa información sobre diferentes recetas de cocinas de diferentes páginas web para generar los platos. También se han listado por categoría: desayuno, principal, acompañamiento y postre, para poder tener diversidad respecto cada tipo.
+    \item \textbf{Información del usuario:} También se necesita la información aportada por los clientes para poder proveer una solución buena, porque estos son los conocedores reales de su estado físico y preferencias, que es vital para poder generar recomendaciones personalizadas adecuados al usuario. Aunque nos faltará información que no proporcionada por el usuario, la mayoría de estos se podrán conseguir a partir de los datos dados por el usuario. Es decir el sistema inferirá los datos para obtener datos realmente útiles, como por ejemplo la energía recomendada diaria de un usuario.
+\end{itemize}
+
+Además de las fuentes anteriormente mencionadas, también cabe destacar que se ha consultado diversos artículos para poder calcular los valores nutritivos recomendados según su condición físico.
+
+\subsection{Objetivos}
+
+A continuación se especificará una serie de objetivos que tiene que cumplir el SBC para ser capaz de resolver con éxito el problema:
+\begin{itemize}
+    \item Obtener los datos de la condición física del usuario, sus preferencias y otro datos de interés respecto al problema, a partir de preguntas al usuario.
+    \item Restringir los platos que pueden ser recomendados según la estación indicada por el usuario.
+    \item Utilizar los datos para calcular una aproximación de las aportaciones nutritivas recomendadas para el usuario, en caso necesario restringir algun nutriente.
+    \item Establecer una colección de menús diarios que se adapten a las necesidades, intereses y restricciones del perfil del usuario.
+    \item Basado en la colección de menús mencionados previamente, seleccionar un total de siete menús con platos de manera variada para formar un menú semanal.
+    \item El sistema debe ser capaz de mostrar el grado de recomendación del menú semanal y las razones que ha llevado el sistema a seleccionar este menú semanal.
+    \item El menú generado tiene que ser válido y cumpla las restricciones establecidas por el usuario.
+\end{itemize}
+
+\newpage
+\section{Conceptualización}
+
+Dada la descripción del problema en detalle, el análisis y el establecimiento de objetivos de nuestro SBC, daremos paso a la fase de conceptualización.
+
+En esta fase, es donde pretendemos obtener una visión de los conceptos que nos permitirá estructurar de forma correcta el problema, para ello, tendremos que mirarlo desde el puntos de vista de un experto del dominio, decidiendo que elementos o informació necesita nuestro sistema para poder resolver el problema. Además tendremos que dividir este en subproblemas más pequeños para poder resolver concretamente cada parte a partir de razonamientos basados en el conocimiento disponible en el sistema. Dividiremos la fase de conceptualización en 4 fases diferentes, donde trataremos detalladamente los temas mencionados.
+
+\subsection{Elementos del problema}
+
+Durante el análisis del problema previamente hecho, hemos vistos que los elemenost principales de este, se pueden dividir en dos grandes grupos diferenciados, por una parte tenemos los referido a los platos e ingredientes, juntamente a sus características, como por ejemplo sus nutrientes, y por otro lado tenemos a los usuarios, su condición física y preferencias.
+
+\subsubsection{Usuario}
+
+Dentro de los datos referentes a los usuarios vamos a considerar las siguientes características:
+\begin{itemize}
+    \item Nombre (tan solo por motivos de cortesía).
+    \item Edad (Para adecuar las recomendaciones de nutrientes).
+    \item Sexo (Para adecuar las recomendaciones de nutrientes).
+    \item Peso (Para adecuar las recomendaciones de nutrientes).
+    \item Estatura (Para adecuar las recomendaciones de nutrientes).
+    \item Cantidad de ejercicio (Para adecuar las recomendaciones de nutrientes).
+\end{itemize}
+
+Respecto al aparto de las preferencias del usuario, que nos determinará que platos tienen más peso, tenemos:
+\begin{itemize}
+    \item Normal TODO
+    \item Vegetariano
+    \item Vegano
+\end{itemize}
+
+Otro punto que necesitamos saber sobre nuestro usuario si tiene alguna enfermedad para poder condicionar sus necesidades efectivamente, en nuestro caso hemos considerado las siguientes enfermedades:
+\begin{itemize}
+    \item Diabetes TODO
+    \item Hipertensión
+\end{itemize}
+
+\subsubsection{Platos e ingredientes}
+
+Aparte los datos solicitados por el usuario, el sistema también tiene que tener conocimiento respecto a los elementos de un menú. Claramente este conocimiento estará almacenados dentro la ontología, es por lo tanto una definición informal de nuestra ontología.
+
+Los menús diario estan identificados mediante una valoración, que nos permitirá saber la afinidad con el usuario, un desayuno, una comida y una cena, a la vez estos estan identificados mediante un principal, un acompañamiento y un postre, en el caso excepcional de los desayunos está formado solamente por los platos de tipo desayuno. Las características de un plato son los siguientes:
+\begin{itemize}
+    \item Nombre del plato.
+    \item Ingrediente principal.
+    \item Ingredientes secundarios.
+    \item Tipo de plato: principal, acompañamiento, postre o desayuno.
+    \item Tipo de cocción.
+    \item Disponibilidad del plato: divido en cuatro meses, el plato puede estar disponible todo el año.
+\end{itemize}
+
+Las características de un ingrediente:
+\begin{itemize}
+    \item Nombre del ingrediente.
+    \item Ración del ingrediente.
+    \item Nutrientes que contiene el ingrediente respecto la ración.
+    \item Tipo de ingrediente: carne, pescado, lácteo...
+\end{itemize}
+
+A parte de todo esto, también tenemos el menú semanal que al igual que el menú diario tiene una valoración y está formado por 7 menús diarios diferentes.
+
+\subsection{Estructura del problema}
+
+Para construir adecuadamente nuestro problema, es necesario subdividir este en subproblemas, ya que intervienen una gran cantidad de elementos, y que nos permitirá construir una solución. Además nos permite un tratamiento sistemático y más simple.
+
+Tal y como se ha observa en apartados anteriores, nuestro problema estará compuesto por cuatro subproblemas armonizados entre ellos a resolver:
+\begin{itemize}
+    \item \textbf{Obtenció información usuario:} Antes de empezar a generar el menú, es necesario obtener todo los datos necesarios sobre el cliente para poder establecer sus necesidades: Su nombre, edad, sexo, cantidad de ejercicio, estatura y peso, a parte de esto también es necesario preguntar que tipo de menú prefiere y si tiene alguna enfermedad. Por último se necesita la estación en la cual consumirá el menú semanal. En resumen esta parte está formado por un sistema de preguntas cerradas, ya sean de tipo numérico (como por ejemplo la edad) o de múltiples opciones (como por ejemplo la estación), gracias a este sistema seremos capaces de asegurar que el usuario introduzca información suficiente, válidas y que nos son útiles para la creación del menú. De esta manera obtendremos todas las restricciones y preferencias a las que los menús se tendrán que amoldar.
+    \item \textbf{Inferencia datos:} Durante este segundo subproblema tendremos analizar los datos que hemos obtenido del primer subproblema y tendremos que sacar otros datos necesarios que no obtenemos de las preguntas, además de otras restricciones, ya sean por las condiciones físicas del usuario o por alguna enfermedad. Además de entre todos los platos tendremos que descartar del espacio de búsqueda aquellos que no cumplan las restricciones (como por ejemplo la estación) y señalar de alguan manera los que tienen más afinidad con el usuario. De este subproblema obtendremos como salida datos necesarios para generar el menú y el conjunto de platos que pueden ser parte de la solución.
+    \item \textbf{Generación menús diarios:} En este último subproblema debemos abstraer las necesidades del usuario obtenidas para obtener un cojunto de características clave. Después, tenemos que generar un conjunto de menús diarios recomendados que el SBC puede ofrecer teniendo en cuenta las preferencias impuestas y las restriciones inferidas anteriormente. Tenemos, además, que evaluar que tan buena son estas y asociarles un grado de recomendación. Esta ponderación es muy importante a la hora de establecer el menú semanal final.
+    \item \textbf{Generación solución:} Finalmente, con todos lo mencionado anteriormente pasaremos a elaborar una solución. Con la colección de menús anterior, tendremos que generar una recomendación seleccionando los menús más idóneos para 7 días que sea lo más saludable para el usuario, de su gusto y a la vez variado. Se hará una valoración final del menú.
+\end{itemize}
+
+\subsection{Proceso de resolución}
+
+Primero de todo se hará un conjunto de preguntas al usuario, de esta manera se obtendrá la informació necesaria que se almacenerá en nuestro sistema sobre este y además restricciones y preferencias del usuario. Esto nos permitirá modelar un menú que se adecue a nuestro usuario.
+
+Seguidamente con toda la información de entrada por el usuario se hará una análisis, que se comentará en apartados posteriores, con la información previa existente del dominio del sistema para generar más restricciones respecto a nuestro menú. Con esto ya habremos adquirido toda la información necesaria para resolver el problema original.
+
+Seguidamente, se bajará la puntuación de los platos que no sean preferencias del usuario y aquellos que estén fuera de temporada. Por ejemplo los platos que contienen carne y pescado para usuarios con preferencia vegetariana. 
+
+Posteriormente se puntuará los desayunos en función las restricciones y del conocimiento experto, luego se escogerá los 7 desayunos con más puntuación. Después de esto se puntuará la comida y la cena que mejor afinidad tenga con estos desayunos, obviamente se penalizará si se repite plato o incluso tipo de ingrediente principal, también aquellos que tengan las calorías muy mal repartidas entre ellas. Se obtendran los menús diarios que mejor se adaptan a nuestro problema.
+
+Una vez obtenidos estos menús estos se puntuaran para que cumplan las recomendaciones diarias y otras restricciones. Finalmente se genera las posibles recomendaciones, se valorará la calidad del menú respecto la repetitividad de los platos y otras restricciones, para establecer el orden de prioridad y escoger el menú semanal con más afinidad con el usuario. TODO VAYA INVENTADA MAS GRANDE
+
+\subsection{Supuestos y organización}
+
+Para la resolución del problema se han hecho las siguientes suposiciones:
+\begin{itemize}
+    \item TODO
+\end{itemize}
+
+\newpage
+\section{Formalización} TODO
+
+\subsection{Tamaño espacio de búsqueda y coste}
+
+\subsection{Ontología del dominio}
+
+\subsection{Método de la resolución}
+
+\subsection{Valoració heurística}
+
+\newpage
+\section{Implementación}
+
+\subsection{Construcció ontología}
+
+\subsection{Módulos}
+
+\newpage
+\section{Pruebas}
+
+\section{Conclusión}
+
+\end{document}
