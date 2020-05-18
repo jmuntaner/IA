@@ -1,15 +1,5 @@
 # Práctica 2: Sistema generación de menús para gente mayor de 65 años
 
-## TODO
-- [X] Generar los menus
-- [ ] Documentacion (toda)
-- [X] Imprimir los menus
-- [X] Tener en cuenta enfermedades
-- [ ] Mas platos
-- [X] Tener en cuenta preferencias
-- [ ] Ponerle nombre al programa
-- [ ] Casos de prueba
-
 ## Cantidades mínimas y máximas recomendadas
 ### Energía
 Este depende del sexo, de la estatura, el peso, la edad y un factor de actividad física
